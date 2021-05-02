@@ -27,6 +27,14 @@ body{
     height: 55px;
     display: flex;
     justify-content: space-between;
+    transition: all 500ms ease-in-out;
+    background-color: transparent;
+    margin-top: 25px;
+}
+
+.menuBackground{
+    background-color: #fff;
+    margin-top: 0;
 }
 
 
@@ -43,7 +51,6 @@ body{
     position: fixed;
     top:95px;
     left: 0;
-    background-color: red;
     transform: translateX(-200px);
     transition: transform 500ms ease-in-out;
     z-index: 10000;
@@ -51,6 +58,8 @@ body{
 .menu--mostrar{
     transform: translateX(0);
 }
+
+
 
 .menu__list{
     width: 100%;
@@ -69,16 +78,22 @@ body{
     font-weight: 600;
     display: block;
     width: 100%;
+    transition: color 500ms ease-in-out;
 }
 .menu__link:hover{
     text-decoration: none;
+    color: #0f1f29;
 }
 
-.hamburger {
+.linkColor{
+    color: #0f1f29;
+}
+
+.hamburger{
     cursor: pointer;
     width:35px;
     height:35px;
-    margin: auto 0;
+    margin: auto 0 auto 15px;
     padding: auto 0;
     display: flex;
     flex-direction: column;
@@ -98,6 +113,7 @@ body{
     -ms-user-select: none;      
     user-select: none;          
   }
+
   .hamburger__linea:nth-child(2),
   .hamburger__linea:nth-child(3){
       margin-top: 20%;
@@ -139,7 +155,6 @@ body{
         margin:0 20px;
     }
     .header__contenedor-principal{
-        background-color: transparent;
         justify-content: center;
         align-items: center;
     }
@@ -167,10 +182,7 @@ body{
     }
     .menu__link{
     }
-    .menu__link:hover{
-        color: #000;
-        text-decoration: none;
-    }
+    
     .header__logo{
         height: 40px;
     }
@@ -184,7 +196,7 @@ body{
 
     @media (min-width: 1200px){
         .barra-superior{
-            justify-content: flex-end;
+            
         }
         .barra-superior__icono{
             margin:0 10px;
