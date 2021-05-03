@@ -82,7 +82,10 @@
     | Header
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
-    <header class="header">
+    <header class="header"
+      data-aos="fade-opacity"
+      data-aos-offset="1"
+      data-aos-duration="1500">
       
       <div class="header__contenedor-principal">
           
@@ -105,8 +108,8 @@
             <li class="menu__item mx-4"><a href="servicios.html" class="menu__link">SERVICIOS</a> </li>
             <li class="menu__item mx-4"><a href="portafolio.html" class="menu__link">PORTAFOLIO</a></li>
             <li class="menu__item mx-4"><a href="contacto.html" class="menu__link">CONTACTO</a></li>
-            <a href="https://www.facebook.com/estandargrup" target="_blank"><i class='bx bxl-facebook text-white'></i></a>
-            <a href="https://www.instagram.com/estandargrup4/" target="_blank"><i class='bx bxl-instagram text-white'></i></a>
+            <a href="https://www.facebook.com/estandargrup" target="_blank" class="menu__redes-sociales shadow bg-dark rounded-pill"><i class='bx bxl-facebook text-white'></i></a>
+            <a href="https://www.instagram.com/estandargrup4/" target="_blank" class="menu__redes-sociales shadow bg-dark rounded-pill"><i class='bx bxl-instagram text-white'></i></a>
           </ul>
         </nav>
 
@@ -119,40 +122,53 @@
     | BANNER
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
-    <section class="banner p-3">
-      <div class="banner__container container-fluid">
+    <section class="banner p-3"
+      data-aos="fade-opacity"
+      data-aos-offset="1"
+      data-aos-duration="1500">
+      <div class="banner__container container-fluid p-0">
         <!-- Swiper -->
-        <div class="swiper-container mySwiper">
+        <!-- <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide position-relative">
-              
-              
-              <h2 class="position-absolute text-white animate__animated animate__backInDown banner__titulo">Ibiza Drinks Experience 
-               <br>
-               <span>Te invita a vivir una experiencia única e inolvidable</span> 
-              </h2>
+              <img src="img/fondo__banner.jpg" alt="">
             </div>
             <div class="swiper-slide position-relative">
-              <h2 class="position-absolute text-white animate__backInUp">Servicio de alta calidad e insuperable profesionalidad 
-              </h2>
+              <img src="img/fondo__banner2.jpg" alt="">
             </div>
             <div class="swiper-slide position-relative">
-              <h2 class="position-absolute text-white">Exclusiva carta de coctelería de autor 
-              </h2>
+              <img src="img/fondo__banner3.jpg" alt="">
             </div>
             <div class="swiper-slide position-relative">
-              <h2 class="position-absolute text-white"> Elegantes barras móviles adaptables a todo tipo de evento
-              </h2>
-            </div>
-            <div class="swiper-slide position-relative">
-              <h2 class="position-absolute text-white"> Magníficas locaciones y embarcaciones para tu celebración 
-              </h2>
+              <img src="img/fondo__banner4.jpg" alt="">
             </div>
 
           </div>
           
+        </div> -->
+
+        <div class="banner__cont-logo col-12 col-md-4
+          d-flex flex-column justify-content-center align-items-center"
+          data-aos="fade-opacity"
+          data-aos-delay="500"
+          data-aos-offset="10"
+          data-aos-duration="1500">
+          <img src="img/logo.png" alt="" class="w-50"
+          data-aos="fade-down"
+          data-aos-offset="10"
+          data-aos-delay="700"
+          data-aos-duration="1500">
+
+          <h1 class="banner__titulo-principal mt-4"
+          data-aos="fade-up"
+          data-aos-offset="10"
+          data-aos-delay="800"
+          data-aos-duration="1500">Ibiza Drink Experience</h1>
+
         </div>
       </div>
+
+      
     </section>
 
     <!-- 

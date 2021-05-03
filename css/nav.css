@@ -5,12 +5,16 @@
 }
 @font-face{
     font-family: "tipografia";
-    src: url("../fonts/Gravity-Bold.otf");
+    src: url("../fonts/Champagne\ &\ Limousines\ Bold.ttf");
     font-style: normal;
 }
 
+
 body{
-    font-family: "tipografia";
+    font-family: "tipografia" !important;
+}
+section{
+    overflow: hidden;
 }
 
 
@@ -90,7 +94,11 @@ body{
 }
 .menu__link:hover{
     text-decoration: none;
-    color: #0f1f29;
+    color:#fff
+}
+.menu__redes-sociales{
+    font-size:12px;
+    padding: 5px;
 }
 
 .linkColor{
@@ -163,8 +171,9 @@ body{
         margin:0 20px;
     }
     .header__contenedor-principal{
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
+        padding-right: 50px;
     }
     .hamburger{
         display: none;
