@@ -7,6 +7,14 @@
     background-attachment: fixe;
 }
 
+.banner__titulo{
+    font-size: 60px;
+}
+
+.banner__titulo span {
+    font-size: 32px;
+}
+
 .video{
     
 }
@@ -14,8 +22,12 @@
     background-color: #e4e4f1;
 }
 
-.video__cont-caracteristica{
+.video__row-caracteristicas{
     margin-top: 120px;
+}
+
+.video__cont-caracteristica{
+    
     transition: all 500ms ease-in-out;
 }
 .video__cont-caracteristica{

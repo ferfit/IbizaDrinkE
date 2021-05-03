@@ -3,9 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
+@font-face{
+    font-family: "tipografia";
+    src: url("../fonts/Gravity-Bold.otf");
+    font-style: normal;
 }
+
+body{
+    font-family: "tipografia";
+}
+
+
 
 .header{
     width: 100%;

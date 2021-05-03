@@ -16,6 +16,8 @@
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link
     rel="stylesheet"
@@ -124,8 +126,10 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide position-relative">
               
-              <h2 class="position-absolute text-white animate__animated animate__backInDown">Ibiza Drinks Experience 
-                Te invita a vivir una experiencia única e inolvidable
+              
+              <h2 class="position-absolute text-white animate__animated animate__backInDown banner__titulo">Ibiza Drinks Experience 
+               <br>
+               <span>Te invita a vivir una experiencia única e inolvidable</span> 
               </h2>
             </div>
             <div class="swiper-slide position-relative">
@@ -157,27 +161,40 @@
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
     <section class="video p-3">
-      <div class="video__container container-fluid py-3">
+      <div class="video__container container-fluid py-3
+      d-flex flex-column justify-content-center align-items-center">
 
-        <h2 class="video__titulo-principal text-center my-5">
+        <h2 class="video__titulo-principal text-center my-5"
+          data-aos="fade-opacity"
+          data-aos-delay="200"
+          data-aos-duration="1500">
           “Vive la Experiencia que estabas Buscando”
         </h2>
 
         <div class="video__row row px-3 mt-4">
 
           <div class="video__cont-imagen col-12 col-md-4 p-3">
-            <img src="img/logo.png" alt="" class="w-100">
+            <img src="img/logo.png" alt="" class="w-100"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="1000">
           </div>
 
           <div class="video__cont-video col-12 col-md-8">
-            <video src="img/video.mp4" width="100%"  controls autoplay class="rounded"></video>
+            <video src="img/video.mp4" width="100%"  controls autoplay class="rounded"
+            data-aos="fade-up"
+            data-aos-duration="1000"></video>
           </div>
         </div>
 
         <div class="video__row-caracteristicas row p-2">
 
           <div class="video__cont-caracteristica col-12 col-md-3
-            d-flex flex-column justify-content-start align-items-center">
+            d-flex flex-column justify-content-start align-items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000">
+
             <img src="img/c2.png" alt="" class="w-25">
             <h3 class="video__titulo text-center">
               Propuesta <br> innovadora
@@ -188,7 +205,11 @@
           </div>
 
           <div class="video__cont-caracteristica col-12 col-md-3
-            d-flex flex-column justify-content-center align-items-center">
+            d-flex flex-column justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000">
+
             <img src="img/c2.png" alt="" class="w-25">
             <h3 class="video__titulo text-center">
               Excelentes profesionales
@@ -199,7 +220,11 @@
           </div>
 
           <div class="video__cont-caracteristica col-12 col-md-3
-            d-flex flex-column justify-content-center align-items-center">
+            d-flex flex-column justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000">
+
             <img src="img/c2.png" alt="" class="w-25">
             <h3 class="video__titulo text-center">
               Calidad de materia prima
@@ -210,7 +235,11 @@
           </div>
 
           <div class="video__cont-caracteristica col-12 col-md-3
-            d-flex flex-column justify-content-center align-items-center">
+            d-flex flex-column justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-duration="1000">
+
             <img src="img/c2.png" alt="" class="w-25">
             <h3 class="video__titulo text-center">
               Compromiso <br> ecológico
@@ -223,6 +252,13 @@
 
       </div>
     </section>
+
+    <!-- 
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | SERVICIOS
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
+    
 
     
 
@@ -239,10 +275,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
 
+    <!-- Gererales JS -->
     <script src="js/nav.js"></script>
     <script src="js/irArriba.js"></script>
     <script src="js/menu.js"></script>
 
+    <!-- Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
@@ -254,6 +292,11 @@
         },
         
       });
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
   </body>
