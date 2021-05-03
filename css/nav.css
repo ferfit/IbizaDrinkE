@@ -9,9 +9,18 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: "tipografia-parrafo";
+    src: url("../fonts/Champagne\ &\ Limousines.ttf");
+    font-style: normal;
+}
+
 
 body{
     font-family: "tipografia" !important;
+}
+p{
+    font-family: "tipografia-parrafo" !important;
 }
 section{
     overflow: hidden;
