@@ -71,14 +71,16 @@ section{
     height: 305px;
     position: fixed;
     top:95px;
-    left: 0;
-    transform: translateX(-200px);
-    transition: transform 500ms ease-in-out;
+    left:-100%;
+    
+    transition: all 500ms ease-in-out;
     z-index: 10000;
 }
 .menu--mostrar{
-    transform: translateX(0);
+    
+    left: 0;
 }
+
 
 
 

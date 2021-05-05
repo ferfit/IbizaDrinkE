@@ -1,10 +1,9 @@
 .banner__container{
     height: 100vh;
-    background: url(../imG/fondo__banner2.jpg);
+    background: url(../img/fondo__banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     position: relative;
 }
 .banner__container::after{
@@ -23,9 +22,17 @@
     background-color: rgba(255, 255, 255, 0.80);
     height: 100%;
     top: 0;
-    left: 0;
     z-index: 1000;
+    animation: mostrarContenedor 2s ease-in-out 1s both;
+    
+    
+    
 }
+
+@keyframes mostrarContenedor {
+    from {left: -100%;}
+    to {left: 0;}
+  }
 
 .banner__titulo{
     font-size: 60px;
