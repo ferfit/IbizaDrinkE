@@ -122,4 +122,19 @@
     color:#fff;
 }
 
+.footer{
+    height: 300px;
+}
+
+.footer__container{
+    background-color: #b3b5b6;
+    height: 100%;
+}
+.footer__list{
+    list-style: none;
+}
+
+.footer__list a {
+    color:#0f1f29 ;
+}
 
