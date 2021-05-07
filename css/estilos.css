@@ -123,11 +123,11 @@
 }
 
 .footer{
-    height: 300px;
+    height: 400px;
 }
 
 .footer__container{
-    background-color: #b3b5b6;
+    background-color:#0f1f29;
     height: 100%;
 }
 .footer__list{
@@ -137,4 +137,135 @@
 .footer__list a {
     color:#0f1f29 ;
 }
+.footer{
+    font-size: 20px;
+}
+
+.footer__logo{
+    width: 100%;
+}
+
+.footer__copy{
+    font-size: 16px;
+}
+
+.quienes-somos{
+    height: 1200px;
+}
+
+.quienes-somos__container{
+    height: 100%;
+    position: relative;
+    background: #c4c4d0;
+}
+
+.quienes-somos__row {
+    height: 550px;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+
+.quienes-somos__cont-textos{
+    background: #0f1f29;
+}
+
+.galeria{
+
+}
+
+.ibiza{
+    margin-top: 70px;
+}
+
+.galeria__container{
+    background-color:rgb(72, 147, 194) ;
+}
+
+
+
+
+@media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { 
+    .footer{
+        height: 350px;
+    }
+    
+    .footer__logo{
+        width: 75%;
+    }
+
+    .quienes-somos{
+        height: 650px;
+    }
+    .quienes-somos__row {
+        width: 95%;
+        margin:50px auto 0 auto;
+        height: 500px;
+        overflow: hidden !important; 
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    .quienes-somos{
+        height: 800px;
+    }
+    .quienes-somos__row {
+        height: 650px;
+    }
+    .quienes-somos__cont-textos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    .footer{
+        height: 320px;
+    }
+    
+    .footer__logo{
+        width: 50%;
+    }
+
+    .quienes-somos{
+        height: 700px;
+    }
+    .quienes-somos__row {
+        height: 550px;
+    }
+
+    .quienes-somos__cont-textos p{
+        text-align: justify;
+    }
+
+
+ }
+
+@media (min-width: 1400px) { 
+    .footer{
+        height: 300px;
+    }
+    
+    .footer__logo{
+        width: 35%;
+    }
+
+    .quienes-somos__row{
+        margin-top: 70px;
+    }
+    .quienes-somos{
+        height: 900px;
+    }
+    .quienes-somos__row {
+        height: 750px;
+    }
+    
+ }
 

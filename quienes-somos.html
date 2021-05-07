@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Metas Cache -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    
+    
+  
+
+    <title>Ibiza Drinks Experience</title>
+    
+  </head>
+  <body>
+    <!-- 
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | Header
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
+    <header class="header"
+      >
+      
+      <div class="header__contenedor-principal">
+          
+        <!-- icono hamburguesa -->
+        <div id="hamburger" class="hamburger">
+
+          <span class="hamburger__linea"></span>
+          
+          <span class="hamburger__linea"></span>
+          
+          <span class="hamburger__linea"></span>
+              
+        </div>
+
+        <!-- menu -->
+        <nav class="menu p-0 m-0" id="menu">
+          <ul class="menu__list p-0 m-0">
+            <li class="menu__item mx-4"><a href="index.html" class="menu__link">HOME</a></li>
+            <li class="menu__item mx-4"><a href="quienes-somos.html" class="menu__link">QUIENES SOMOS</a></li>
+            <li class="menu__item mx-4"><a href="galeria.html" class="menu__link">GALERIA</a> </li>
+            <li class="menu__item mx-4"><a href="portafolio.html" class="menu__link">SERVICIOS</a></li>
+            <li class="menu__item mx-4"><a href="contacto.html" class="menu__link">CONTACTO</a></li>
+            <a href="https://www.facebook.com/estandargrup" target="_blank" class="menu__redes-sociales shadow rounded-pill d-none d-md-inline"><i class='bx bxl-facebook text-white'></i></a>
+            <a href="https://www.instagram.com/estandargrup4/" target="_blank" class="menu__redes-sociales shadow rounded-pill d-none d-md-inline"><i class='bx bxl-instagram text-white'></i></a>
+
+            <div class="row w-100 d-md-none">
+              <div class="col-6 d-flex justify-content-center align-items-center">
+                <a href="https://www.facebook.com/" target="_blank" class="menu__redes-sociales  shadow rounded-pill d-flex justify-content-center align-items-center"><i class='bx bxl-facebook text-white'></i></a>
+              </div>
+              <div class="col-6 d-flex justify-content-center align-items-center">
+                <a href="https://www.instagram.com/" target="_blank" class="menu__redes-sociales  shadow rounded-pill d-flex justify-content-center align-items-center"><i class='bx bxl-instagram text-white'></i></a>
+              </div>
+            </div>
+
+          </ul>
+        </nav>
+
+      </div>
+      
+    </header>
+
+    <main>
+    
+      <!-- 
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | BANNER
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="quienes-somos p-3"
+        >
+        <div class="quienes-somos__container container-fluid p-2 mt-2">
+
+          <div class="quienes-somos__row row d-flex justify-content-center align-items-start">
+
+            <div class="quienes-somos__cont-textos col-12 col-md-6 col-xl-4 p-5 h-100">
+              <h1 class="text-white">Quiénes somos...</h1>
+              <p class="text-white">En la icónica Ibiza damos rienda a nuestros Sueños guiados por la pasión y el amor por lo que hacemos. Somos un equipo
+                especializado en la organización de eventos privados, en los que nos destacamos, principalmente, por nuestra exclusiva
+                coctelería de autor y un servicio de bebidas de alta calidad. <br><br>
+                Nuestro mayor deseo es que puedas disfrutar de tu Celebración, mientras nosotros nos encargamos de hacerlo Inolvidable.</p>
+            </div>
+
+            <div class="quienes-somos__cont-imagen col-12 col-md-6 col-xl-4 p-0 ">
+              <img src="img/quienes_somos2.jpg" class="w-100" alt="">
+            </div>
+          </div>
+          
+
+          
+        </div>
+
+        
+      </section>
+
+      
+
+    </main>
+
+    <!-- 
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | FOOTER
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="footer p-3">
+        <div class="footer__container container-fluid py-3
+        d-flex flex-column justify-content-center align-items-center">
+
+          <div class="row w-100">
+            <div class="footer__cont-datos d-md-none d-flex justify-content-center align-items-center col-12 col-md-4 mt-3">
+
+              <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
+
+                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos text-white text-center mx-auto">34 666 35 24 49</li>  
+                
+              </ul>
+
+            </div>
+
+            <div class="footer__cont-menu col-6 col-md-4 mt-3">
+              <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-around">
+                <li class=""><a href="index.html" class="text-decoration-none text-white">HOME</a></li>
+                <li class=""><a href="quienes-somos.html" class="text-decoration-none text-white">QUIENES SOMOS</a></li>
+                <li class=""><a href="galeria.html" class="text-decoration-none text-white">GALERIA</a> </li>
+                <li class=""><a href="portafolio.html" class="text-decoration-none text-white">SERVICIOS</a></li>
+                <li class=""><a href="contacto.html" class="text-decoration-none text-white">CONTACTO</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__cont-imagen col-6 col-md-4 d-flex justify-content-center align-items-center">
+              <img src="img/logo.png" class="footer__logo" alt="">
+            </div>
+
+            <div class="footer__cont-datos d-none d-md-block d-flex justify-content-center align-items-center col-12 col-md-4 mt-3">
+
+              <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
+
+                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos text-white text-center">34 666 35 24 49</li>  
+                
+              </ul>
+
+            </div>
+
+            
+
+            <div class="container p-0 mt-5 mt-xxl-2">
+              <h3 class=" footer__copy text-center py-2 m-0 text-white">Coryright@<script>document.write(new Date().getFullYear());</script> || Desarrollado por <a class="text-white text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
+    
+    
+    
+
+    
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Gererales JS -->
+    <script src="js/nav.js"></script>
+    <!-- <script src="js/irArriba.js"></script> -->
+    <script src="js/menu.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    
+
+  </body>
+</html>
