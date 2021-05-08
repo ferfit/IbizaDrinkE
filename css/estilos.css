@@ -182,6 +182,97 @@
     background-color:rgb(72, 147, 194) ;
 }
 
+.servicios__container{
+    height: 100vh;
+    background: url(../img/2N7A2375.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.servicios__container::after{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #00000033;
+    z-index: 2;
+}
+
+.servicios__titulo-principal{
+    font-size: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+.servicios__subtitulo-principal{
+    position: relative;
+    z-index: 10;
+}
+.servicios__nuestro-equipo{
+    
+}
+
+.servicios__container-nuestro-equipo{
+    background-color: #c4c4d0 ;
+    height: 1400px;
+}
+
+.servicios__cont-imagen-nuestro-equipo{
+    background-image: url(../img/foto4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.camareros{
+    background-image: url(../img/foto3.jpg);
+}
+
+.servicios__cont-datos-nuestro-equipo{
+    background-color: #0f1f29 ;
+}
+.servicios__cont-imagen-base{
+    background-image: url(../img/base.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-standar{
+    background-image: url(../img/estandar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-premium{
+    background-image: url(../img/premium.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.servicios__textos-finales{
+    font-size: 16px;
+}
+
+.img-barras{
+    background-image: url(../img/barras.jpg);
+}
+
+.img-locacion{
+    background-image: url(../img/locacion.jpg);
+}
+
+
+
 
 
 
@@ -205,6 +296,18 @@
         height: 500px;
         overflow: hidden !important; 
         padding: 0;
+    }
+
+    .servicios__titulo-principal{
+        font-size: 100px;
+    }
+
+    .servicios__container-nuestro-equipo{
+        height: 950px;
+    }
+
+    .servicios__cont-imagen-nuestro-equipo{
+        height: 400px;
     }
 }
 
@@ -245,6 +348,18 @@
         text-align: justify;
     }
 
+    .servicios__container-nuestro-equipo{
+        height: 700px;
+    }
+
+    .servicios__nuestro-equipo .row{
+        height: 320px;
+    }
+
+    .servicios__cont-imagen-nuestro-equipo{
+        height: 300px;
+    }
+
 
  }
 
@@ -266,6 +381,19 @@
     .quienes-somos__row {
         height: 750px;
     }
+
+    .servicios__container-nuestro-equipo {
+        height: 900px;
+    }
+
+    .servicios__container-nuestro-equipo .row:nth-child(2){
+        margin-top: 70px;
+    }
+
+    .servicios__cont-imagen-nuestro-equipo{
+        height: 350px;
+    }
+
     
  }
 
