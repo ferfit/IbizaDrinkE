@@ -45,12 +45,20 @@
 .video{
     
 }
+.video__titulo-principal,
 .video__parrafo{
-    font-size: 22px;
+    color:#0f1f29 ;
+}
+.video__titulo{
+    font-weight: bold;
+}
+.video__parrafo{
+    font-size: 20px;
     line-height: 40px;
+    font-weight: 600;
 }
 .video__container{
-    background-color: #0f1f29;
+    background-color: #f2cf8d;
 }
 
 .video__row-caracteristicas{
@@ -63,7 +71,7 @@
 }
 
 .video__cont-caracteristica:hover{
-    border-bottom: 4px solid #f2cf8d;
+    border-bottom: 4px solid #0f1f29;
 }
 
 
@@ -181,7 +189,11 @@
 
 
 .quienes-somos__cont-textos{
-    background: #0f1f29;
+    background: #f2cf8d;
+}
+.quienes-somos__cont-textos p{
+    font-weight: 700;
+
 }
 
 .galeria{
@@ -234,7 +246,7 @@
 }
 
 .servicios__container-nuestro-equipo{
-    background-color: #c4c4d0 ;
+    background-color: #0f1f29 ;
     height: 1400px;
 }
 
@@ -246,12 +258,16 @@
     height: 300px;
 }
 
+.servicios__parrafos{
+    font-weight: 700;
+    font-size: 20px;
+}
 .camareros{
     background-image: url(../img/foto3.jpg);
 }
 
 .servicios__cont-datos-nuestro-equipo{
-    background-color: #0f1f29 ;
+    background-color: #f2cf8d ;
 }
 .servicios__cont-imagen-base{
     background-image: url(../img/base.jpeg);
@@ -307,7 +323,7 @@
 }
 
 .contacto-cont{
-    background-color: #0f1f29;
+    background-color: #f2cf8d;
 }
 
 
@@ -319,7 +335,7 @@ input, textarea{
     width: 95%;
     background:none;
     border:none;
-    border-bottom:2px solid lightgrey;
+    border-bottom:2px solid #0f1f29;
     margin-top: 20px;
     padding: 2px 5px;
 }
@@ -329,8 +345,8 @@ input:focus, textarea:focus{
 }
 .contacto-btn{
     width: 70%;
-    background-color: #f2cf8d;    
-    color: #0f1f29;
+    background-color: #0f1f29;    
+    color: #f2cf8d;
     padding: 5px 20px;
     border:none;
 }
@@ -339,8 +355,10 @@ input:focus, textarea:focus{
 
 
 .contacto-texto h2,
-.contacto-texto p {
-    color:#fff;
+.contacto-texto p,
+.contacto-texto a {
+    color:#0f1f29;
+    font-weight: 700;
 }
 .contacto-texto h2{
     font-size: 35px;
@@ -349,6 +367,8 @@ input:focus, textarea:focus{
 .contacto__redes i{
     font-size: 30px;
     margin-left: 2px;
+    color: #0f1f29;
+    font-weight: 700;
 }
 
 
