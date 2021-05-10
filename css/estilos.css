@@ -260,14 +260,14 @@
 
 .servicios__container-nuestro-equipo{
     background-color: #0f1f29 ;
-    height: 1700px;
+    height: 1500px;
 }
 
 .servicios__cont-imagen-nuestro-equipo{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: auto;
 }
 
 .servicios__parrafos{
