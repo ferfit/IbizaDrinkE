@@ -33,7 +33,10 @@
     from {left: -100%;}
     to {left: 0;}
   }
-
+.banner__titulo-principal,
+.banner__titulo-secundario{
+    font-family: "bodoni";
+}
 .banner__titulo{
     font-size: 60px;
 }
@@ -261,7 +264,6 @@
 }
 
 .servicios__cont-imagen-nuestro-equipo{
-    background-image: url(../img/foto4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -303,13 +305,9 @@
     font-size: 16px;
 }
 
-.img-barras{
-    background-image: url(../img/barras.jpg);
-}
 
-.img-locacion{
-    background-image: url(../img/locacion.jpg);
-}
+
+
 
 .servicios__cont-pack{
     height: auto;
@@ -504,15 +502,19 @@ input:focus, textarea:focus{
     }
 
     .servicios__nuestro-equipo .row{
-        height: 320px;
+        height: auto;
     }
 
     .servicios__cont-imagen-nuestro-equipo{
-        height: 300px;
+        height: auto;
     }
 
     .contacto{
         height: 750px;
+    }
+
+    .camareros{
+        height: 300px;
     }
 
 
