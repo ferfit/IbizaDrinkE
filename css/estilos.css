@@ -311,6 +311,18 @@
     background-image: url(../img/locacion.jpg);
 }
 
+.servicios__cont-pack{
+    height: auto;
+}
+
+.servicios__cont-pack div:nth-child(1){
+    order: 1;
+}
+.servicios__cont-pack div:nth-child(2){
+    order: 0;
+    height: 300px;
+}
+
 
 /*--------------------------------------------------------------------------------------*/
 /*---------- contacto        -----------------------------------------------------------*/
@@ -360,7 +372,6 @@ input:focus, textarea:focus{
     width: 70%;
     background-color: #0f1f29;    
     color: #f2cf8d;
-    padding: 5px 20px;
     border:none;
 }
 
@@ -420,7 +431,7 @@ input:focus, textarea:focus{
     }
 
     .servicios__cont-imagen-nuestro-equipo{
-        height: 400px;
+        height: auto;
     }
 
     .contacto{
@@ -429,6 +440,18 @@ input:focus, textarea:focus{
 
     .contacto-cont{
         width: 75%;
+    }
+
+    .servicios__cont-pack{
+        height: auto;
+    }
+    
+    .servicios__cont-pack div:nth-child(1){
+        order: 0;
+    }
+    .servicios__cont-pack div:nth-child(2){
+        order: 1;
+        height: auto;
     }
 }
 
@@ -449,6 +472,10 @@ input:focus, textarea:focus{
     .contacto{
         height: 750px;
     }
+    .servicios__cont-imagen-nuestro-equipo{
+        height: 400px;
+    }
+
  }
 
 
