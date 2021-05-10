@@ -106,7 +106,7 @@ section{
 }
 .menu__link:hover{
     text-decoration: none;
-    color:#fff;
+    color:none;
 }
 .menu__redes-sociales{
     font-size:12px;
@@ -152,6 +152,7 @@ section{
     -ms-user-select: none;      
     user-select: none;          
 }
+
 
 .hamburger__linea:nth-child(2),
 .hamburger__linea:nth-child(3){
@@ -230,6 +231,9 @@ section{
        .menu__list{
            width: 100%;
        }
+       .linkColor{
+        color: #0f1f29;
+    }
     }
 
     @media (min-width: 1200px){
@@ -245,6 +249,9 @@ section{
         }
         .header__logo{
             height: 48px;
+        }
+        .linkColor{
+            color: #0f1f29;
         }
       
     }

@@ -46,7 +46,8 @@
     
 }
 .video__titulo-principal,
-.video__parrafo{
+.video__parrafo,
+.video__titulo{
     color:#0f1f29 ;
 }
 .video__titulo{
@@ -58,7 +59,7 @@
     font-weight: 600;
 }
 .video__container{
-    background-color: #f2cf8d;
+    background-color: #0f1f29;
 }
 
 .video__row-caracteristicas{
@@ -67,11 +68,15 @@
 
 .video__cont-caracteristica{
     transition: border 500ms ease-in-out;
-    border-bottom: 4px solid transparent;
+    
+    
+}
+.video__cont-caracteristica div{
+    background-color:#f2cf8d ;
 }
 
 .video__cont-caracteristica:hover{
-    border-bottom: 4px solid #0f1f29;
+   
 }
 
 
@@ -190,6 +195,8 @@
 
 .quienes-somos__cont-textos{
     background: #f2cf8d;
+    position: relative;
+    z-index: 10;
 }
 .quienes-somos__cont-textos p{
     font-weight: 700;
@@ -205,7 +212,7 @@
 }
 
 .galeria__container{
-    background-color:rgb(72, 147, 194) ;
+    background-color:#000 ;
 }
 
 .servicios__container{
@@ -241,13 +248,16 @@
     position: relative;
     z-index: 10;
 }
+.servicios__eventos{
+    font-size: 22px;
+}
 .servicios__nuestro-equipo{
     
 }
 
 .servicios__container-nuestro-equipo{
     background-color: #0f1f29 ;
-    height: 1400px;
+    height: 1700px;
 }
 
 .servicios__cont-imagen-nuestro-equipo{
@@ -324,6 +334,9 @@
 
 .contacto-cont{
     background-color: #f2cf8d;
+    position: relative;
+    z-index: 10;
+    width: 100%;
 }
 
 
@@ -403,7 +416,7 @@ input:focus, textarea:focus{
     }
 
     .servicios__container-nuestro-equipo{
-        height: 950px;
+        height: 1100px;
     }
 
     .servicios__cont-imagen-nuestro-equipo{
@@ -412,6 +425,10 @@ input:focus, textarea:focus{
 
     .contacto{
         height: 750px;
+    }
+
+    .contacto-cont{
+        width: 75%;
     }
 }
 
