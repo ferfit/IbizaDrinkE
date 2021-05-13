@@ -425,7 +425,7 @@ input:focus, textarea:focus{
     }
 
     .servicios__container-nuestro-equipo{
-        height: 1100px;
+        height: 1500px;
     }
 
     .servicios__cont-imagen-nuestro-equipo{
@@ -470,8 +470,11 @@ input:focus, textarea:focus{
     .contacto{
         height: 750px;
     }
+    .servicios__container-nuestro-equipo{
+        height: 1800px;
+    }
     .servicios__cont-imagen-nuestro-equipo{
-        height: 400px;
+        height: auto;
     }
 
  }
