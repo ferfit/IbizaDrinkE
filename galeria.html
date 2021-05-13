@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/lenguajes.css">
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     
@@ -79,13 +80,29 @@
         <!-- menu -->
         <nav class="menu p-0 m-0" id="menu">
           <ul class="menu__list p-0 m-0">
+
+            <!-- lenguajes -->
+
+            <div class="d-flex d-md-none">
+              <a href="">
+                <img src="img/estados-unidos-de-america.svg" alt="" class="lenguajes__icono mx-2">
+              </a>
+              <a href="">
+                <img src="img/italia.svg" alt="" class="lenguajes__icono mx-2">
+              </a>
+              <a href="">
+                <img src="img/francia.svg" alt="" class="lenguajes__icono mx-2">
+              </a>
+            </div>
+
+
             <li class="menu__item mx-4"><a href="index.html" class="menu__link">HOME</a></li>
             <li class="menu__item mx-4"><a href="quienes-somos.html" class="menu__link">QUIENES SOMOS</a></li>
             <li class="menu__item mx-4"><a href="galeria.html" class="menu__link">GALERIA</a> </li>
             <li class="menu__item mx-4"><a href="servicios.html" class="menu__link">SERVICIOS</a></li>
             <li class="menu__item mx-4"><a href="contacto.html" class="menu__link">CONTACTO</a></li>
-            <a href="https://www.facebook.com/Ibiza.Drinks.Experience" target="_blank" class="menu__redes-sociales shadow rounded-pill d-none d-md-inline"><i class='bx bxl-facebook text-white'></i></a>
-            <a href="https://www.instagram.com/ibiza_drinks_experience/" target="_blank" class="menu__redes-sociales shadow rounded-pill d-none d-md-inline"><i class='bx bxl-instagram text-white'></i></a>
+            <a href="https://www.facebook.com/Ibiza.Drinks.Experience" target="_blank" class="menu__redes-sociales rounded-pill d-none d-md-inline"><i class='bx bxl-facebook text-white'></i></a>
+            <a href="https://www.instagram.com/ibiza_drinks_experience/" target="_blank" class="menu__redes-sociales  rounded-pill d-none d-md-inline"><i class='bx bxl-instagram text-white'></i></a>
 
             <div class="row w-100 d-md-none">
               <div class="col-6 d-flex justify-content-center align-items-center">
@@ -96,8 +113,36 @@
               </div>
             </div>
 
+             <!-- lenguajes -->
+            <div class="btn-group d-none d-md-inline-block">
+              <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/espana.svg" alt="" class="lenguajes__icono w-100">
+              </button>
+              <ul class="dropdown-menu">
+                <li class="px-2">
+                  <a href="">
+                    <img src="img/estados-unidos-de-america.svg" alt="" class="lenguajes__icono w-100 mt-2">
+                  </a>
+                </li>
+                <li class="px-2">
+                  <a href="">
+                    <img src="img/italia.svg" alt="" class="lenguajes__icono w-100 mt-2">
+                  </a>
+                </li>
+                <li class="px-2">
+                  <a href="">
+                    <img src="img/francia.svg" alt="" class="lenguajes__icono w-100 mt-2">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            
+            
+            
+
           </ul>
-        </nav>
+        </nav>      
 
       </div>
       
@@ -256,7 +301,6 @@
 
     <!-- Gererales JS -->
     <script src="js/nav.js"></script>
-    <!-- <script src="js/irArriba.js"></script> -->
     <script src="js/menu.js"></script>
 
     
