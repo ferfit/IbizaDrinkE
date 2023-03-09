@@ -1,3 +1,7 @@
+.colorBlack{
+    color:black
+}
+
 .banner__container{
     height: 100vh;
     background: url(../img/fondo__banner.jpg);
@@ -24,8 +28,6 @@
     top: 0;
     z-index: 1000;
     animation: mostrarContenedor 1s ease-in-out 1s both;
-    
-    
     
 }
 
@@ -128,19 +130,20 @@ banner
 }
 .video__titulo{
     font-weight: bold;
+    color: #000;
 }
 .video__parrafo{
     font-size: 20px;
     line-height: 40px;
     font-weight: 600;
-    color: white;
+    color: black;
 }
 .video__container{
     /*background-color: #0f1f29;*/
 }
 
 .video__cont-imagen{
-    background: linear-gradient(to bottom right, rgba(28, 129, 192, 0.668), rgba(30, 6, 103, 0.639)), url(../img/fondo_contacto.png);
+    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(239, 239, 239)), url(../img/fondo_contacto.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -156,7 +159,7 @@ banner
     
 }
 .video__cont-caracteristica div{
-    background: linear-gradient(to bottom right, rgba(28, 129, 192, 0.908), rgba(30, 6, 103, 0.908)), url(../img/fondo_quienes.jpg);
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(239, 239, 239)), url(../img/fondo_quienes.jpg);
     /*background-image: url(../img/fondo_contacto.png);*/
     background-position: center;
     background-size: cover;
@@ -225,17 +228,13 @@ banner
 
 .footer__container{
     /*background-color:#0f1f29;*/
-    background: linear-gradient(to bottom right, rgba(28, 129, 192, 0.908), rgba(30, 6, 103, 0.908));
-
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(239, 239, 239));
     height: 100%;
 }
 .footer__list{
     list-style: none;
 }
 
-.footer__list a {
-    color:#0f1f29 ;
-}
 .footer{
     font-size: 20px;
 }
@@ -495,10 +494,11 @@ input:focus, textarea:focus{
     width: 100%;
     padding: 0 15px;
     display: flex;
+    justify-content: center;
 }
 
 .testimonial .testimonial-item img {
-    width: 80px;
+    width: 90px;
     height: 80px;
     border-radius: 80px;
     transform: scale(.8);
@@ -564,6 +564,7 @@ input:focus, textarea:focus{
 .testimonial .owl-dot.active {
     background: #0b0d91;
 }
+
 
 
 
