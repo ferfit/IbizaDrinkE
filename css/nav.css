@@ -77,13 +77,17 @@ section{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: #f2cf8d;
+    /*background-color: #f2cf8d;*/
     left:-100%;
     transition: all 500ms ease-in-out;
     z-index: 10000;
 }
 .menu--mostrar{
     left: 0;
+}
+
+.menu__bc{
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
 }
 
 
@@ -183,6 +187,10 @@ section{
 
 
   @media (min-width: 768px) { 
+    .menu__bc{
+        background: transparent;
+    }
+
     .barra-superior{
         width: 100%;
         justify-content: center;

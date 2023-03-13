@@ -43,9 +43,9 @@ banner
   
   #bg-video {
       min-width: 100%;
-      min-height: 100vh;
+      /*min-height: 100vh;*/
       max-width: 100%;
-      max-height: 100vh;
+      /*max-height: 100vh;*/
       object-fit: cover;
       z-index: -1;
   }
@@ -55,13 +55,22 @@ banner
   }
   
   .video-overlay {
-      position: absolute;
-      background-color: rgba(35, 45, 57, 0.552);
-      top: 0;
-      left: 0;
-      bottom: 7px;
-      width: 100%;
+    position: absolute;
+    /*background: linear-gradient(90deg, rgba(2, 28, 38, 0.807), rgba(205, 187, 187, 0.744));*/
+    top: 0;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    /*animation: cambiar 10s infinite;*/
   }
+
+  /* @keyframes cambiar {
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%;}
+  } */
+
+
   
   .main-banner .caption {
     text-align: center;
@@ -95,6 +104,17 @@ banner
     font-style: normal;
     color: #ed563b;
     font-weight: 900;
+  }
+
+  .catering__img{
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    padding: 0;
+  }
+
+  .catering__cont-bodas {
+    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
   }
 
   .video__logo{
@@ -143,7 +163,7 @@ banner
 }
 
 .video__cont-imagen{
-    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(239, 239, 239)), url(../img/fondo_contacto.png);
+    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215)), url(../img/fondo_contacto.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -159,7 +179,7 @@ banner
     
 }
 .video__cont-caracteristica div{
-    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(239, 239, 239)), url(../img/fondo_quienes.jpg);
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215)), url(../img/fondo_quienes.jpg);
     /*background-image: url(../img/fondo_contacto.png);*/
     background-position: center;
     background-size: cover;
@@ -228,7 +248,7 @@ banner
 
 .footer__container{
     /*background-color:#0f1f29;*/
-    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(239, 239, 239));
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
     height: 100%;
 }
 .footer__list{
@@ -279,7 +299,7 @@ banner
 
 
 .quienes-somos__cont-textos{
-    background: #f2cf8d;
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
     position: relative;
     z-index: 10;
 }
@@ -403,6 +423,161 @@ banner
     height: 300px;
 }
 
+/* Portfolio Section
+--------------------------------*/
+
+#portfolio {
+    padding: 60px 0;
+  }
+  
+  #portfolio #portfolio-flters {
+    padding: 0;
+    margin: 5px 0 35px 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  #portfolio #portfolio-flters li {
+    cursor: pointer;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #portfolio #portfolio-flters li:hover,
+  #portfolio #portfolio-flters li.filter-active {
+    background: var(--colorAzul);
+    color: #fff;
+  }
+  
+  #portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  #portfolio .portfolio-wrap {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+  }
+  
+  #portfolio .portfolio-wrap:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+  }
+  
+  #portfolio .portfolio-item {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+  }
+  
+  #portfolio .portfolio-item figure {
+    background: #000;
+    overflow: hidden;
+    height: 240px;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+  }
+  
+  #portfolio .portfolio-item figure:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+  
+  #portfolio .portfolio-item figure .link-preview,
+  #portfolio .portfolio-item figure .link-details {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    line-height: 1;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.2s linear;
+  }
+  
+  #portfolio .portfolio-item figure .link-preview i,
+  #portfolio .portfolio-item figure .link-details i {
+    padding-top: 6px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  #portfolio .portfolio-item figure .link-preview:hover,
+  #portfolio .portfolio-item figure .link-details:hover {
+    background: var(--colorAzul);
+  }
+  
+  #portfolio .portfolio-item figure .link-preview:hover i,
+  #portfolio .portfolio-item figure .link-details:hover i {
+    color: #fff;
+  }
+  
+  #portfolio .portfolio-item figure .link-preview {
+    left: calc(50% - 38px);
+    top: calc(50% - 18px);
+  }
+  
+  #portfolio .portfolio-item figure .link-details {
+    right: calc(50% - 38px);
+    top: calc(50% - 18px);
+  }
+  
+  #portfolio .portfolio-item figure:hover .link-preview {
+    opacity: 1;
+    left: 45%;
+  }
+  
+  #portfolio .portfolio-item figure:hover .link-details {
+    opacity: 1;
+    right: calc(50% - 44px);
+  }
+  
+  #portfolio .portfolio-item .portfolio-info {
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+    height: 90px;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  #portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    line-height: 1px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-bottom: 0;
+  }
+  
+  #portfolio .portfolio-item .portfolio-info h4 a {
+    color: #333;
+  }
+  
+  #portfolio .portfolio-item .portfolio-info h4 a:hover {
+    color: #18d26e;
+  }
+  
+  #portfolio .portfolio-item .portfolio-info p {
+    padding: 0;
+    margin: 0;
+    color: #b8b8b8;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+
+
+
 
 /*--------------------------------------------------------------------------------------*/
 /*---------- contacto        -----------------------------------------------------------*/
@@ -425,7 +600,7 @@ banner
 }
 
 .contacto-cont{
-    background-color: #f2cf8d;
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
     position: relative;
     z-index: 10;
     width: 100%;

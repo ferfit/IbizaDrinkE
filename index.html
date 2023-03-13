@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/lenguajes.css">
+    <link rel="stylesheet" href="css/whatsapp.css">
+    <link rel="stylesheet" href="lib/animate/animate.css">
+
 
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -82,7 +85,7 @@
         </div>
 
         <!-- menu -->
-        <nav class="menu p-0 m-0" id="menu">
+        <nav class="menu p-0 m-0 menu__bc" id="menu">
           <ul class="menu__list p-0 m-0">
 
             <!-- lenguajes -->
@@ -155,8 +158,8 @@
     <main>
 
       <div class="main-banner" id="top">
-        <video autoplay loop muted id="bg-video">
-            <source src="./img/video.mov" type="video/mp4" />
+        <video loop muted  id="bg-video">
+            <source src="./img/video.mp4" type="video/mp4" />
         </video>
 
         <div class="video-overlay header-text">
@@ -166,8 +169,8 @@
                 <div class="main-button scroll-to-section">
                     <a href="#features">Become a member</a>
                 </div> -->
-                <img src="img/logo.png" alt="" class="d-block video__logo"
-            >
+                <!-- <img src="img/logo.png" alt="" class="d-block video__logo"> -->
+            
             </div>
         </div>
       </div>
@@ -203,6 +206,39 @@
         
       </section> -->
 
+      <section class="catering p-5 overflow-hidden">
+
+        <div class="container">
+
+          <h2 class="my-3 text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms" >CATERING DE BEBIDA <br>BARRAS MOBILES</h2>
+
+          <div class="row justify-content-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="1000ms">
+
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="./img/boda.png" alt="">
+              <h3 class="text-center mt-2 p-2">Bodas</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="./img/fiesta.png" alt="">
+              <h3 class="text-center mt-2 p-2">Fiestas privadas</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="./img/corporativo.png" alt="">
+              <h3 class="text-center mt-2 p-2">Eventos coorporativos</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="./img/cena.png" alt="">
+              <h3 class="text-center mt-2 p-2">Cenas privadas</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="./img/barco.png" alt="">
+              <h3 class="text-center mt-2 p-2">Servicio de barco</h3>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       <!-- 
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | VIDEO
@@ -212,23 +248,26 @@
         <div class="video__container container-fluid py-3
         d-flex flex-column justify-content-center align-items-center">
 
-          <h2 class="video__titulo-principal text-center my-5"
-            data-aos="fade-opacity"
-            data-aos-delay="200"
-            data-aos-duration="1500">
+          <h2 class="video__titulo-principal text-center my-5 wow fadeIn" data-wow-duration="2s" data-wow-delay="500ms">
             ...Vive la Experiencia que estabas Buscando...!
           </h2>
 
           <div class="video__row row px-3 mt-4">
 
-            <div class="video__cont-video col-12 col-md-8 p-0">
-              <video autoplay src="img/video.mov" width="100%" height="100%" controls 
-              data-aos="fade-up"
-              data-aos-duration="1000"></video>
+            <div class="video__cont-video col-12 col-xl-8 p-0 d-none d-md-block wow fadeInLeft" data-wow-duration="2s" data-wow-delay="500ms">
+              <video muted width="100%" autoplay loop height="100%" id="bg_video2" >
+                <source src="img/video2.mp4" type="video/mp4"  />
+              </video>
             </div>
 
-            <div class="video__cont-imagen col-12 col-md-4 p-3
-              d-flex justify-content-center align-items-center  ">
+            <div class="video__cont-video col-12 col-xl-8 p-0 d-block d-md-none">
+              <video muted width="100%" controls height="100%" id="bg_video2" >
+                <source src="img/video2.mp4" type="video/mp4"  />
+              </video>
+            </div>
+
+            <div class="video__cont-imagen col-12 col-xl-4 p-3 
+              d-flex justify-content-center align-items-center wow fadeInRight" data-wow-duration="2s" data-wow-delay="500ms">
               <h2 class="video__parrafo text-center">Ibiza Drink Experience<br>
                 Te invitamos a vivir una experiencia única e inolvidable <br> 
                 Servicio de alta calidad e insuperable profesionalidad  <br>
@@ -242,13 +281,11 @@
           </div>
 
           <div class="container">
-          <div class="video__row-caracteristicas row">
+          <div class="video__row-caracteristicas row overflow-hidden">
             
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
-              d-flex flex-column justify-content-start align-items-center mt-2 "
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="1000">
+              d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms"
+              >
 
               <div class="p-2 h-100 rounded">
                 <img src="img/drink.svg" alt="" class="w-25 mt-4 d-block mx-auto">
@@ -264,10 +301,7 @@
             </div>
 
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
-              d-flex flex-column justify-content-start align-items-center mt-2"
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="1000">
+              d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="700ms">
 
               <div class="p-2 h-100 rounded">
                 <img src="img/mozo.svg" alt="" class="w-25 mt-4 d-block mx-auto">
@@ -283,10 +317,7 @@
             </div>
 
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
-              d-flex flex-column justify-content-start align-items-center mt-2"
-              data-aos="fade-up"
-              data-aos-delay="600"
-              data-aos-duration="1000">
+              d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="900ms">
 
               <div class="p-2 h-100 rounded">
                 <img src="img/drinks.svg" alt="" class="w-25 mt-4 d-block mx-auto">
@@ -302,10 +333,7 @@
             </div>
 
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
-              d-flex flex-column justify-content-start align-items-center mt-2"
-              data-aos="fade-up"
-              data-aos-delay="700"
-              data-aos-duration="1000">
+              d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1100ms">
 
               <div class="p-2 h-100 rounded">
                 <img src="img/mundo.svg" alt="" class="w-25 mt-4 d-block mx-auto">
@@ -332,7 +360,7 @@
       !-->
 
       <!-- Testimonial Start -->
-      <div class="testimonial">
+      <div class="testimonial wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
         <div class="container">
             <div class="section-header text-center mb-5">
               <h2>Testimonios</h2>
@@ -409,7 +437,7 @@
       | FOOTER
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="footer">
+      <section class="footer wow fadeIn" data-wow-duration="2s" data-wow-delay="1000ms">
         <div class="footer__container container-fluid py-3
         d-flex flex-column justify-content-center align-items-center shadow">
 
@@ -436,7 +464,7 @@
             </div>
 
             <div class="footer__cont-imagen col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <img src="img/logo.png" class="footer__logo" alt="">
+              <img src="img/logo.png" class="footer__logo wow rotateIn" data-wow-duration="2s" data-wow-delay="1500ms" alt="" >
             </div>
 
             <div class="footer__cont-datos d-none d-md-block d-flex justify-content-center align-items-center col-12 col-md-4">
@@ -461,6 +489,10 @@
 
         </div>
       </section>
+
+      <!-- <a class="whatsapp position-fixed shadow mostrarWhatsapp" href="https://api.whatsapp.com/send?phone=34666352449" target="_black" id="whatsapp" aria-colspan="d-block">
+        <i class="bx bxl-whatsapp whatsapp__icono"></i>
+      </a> -->
 
     
     
@@ -489,16 +521,25 @@
     <script src="js/nav.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
+    
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    
+    <script src="lib/wow/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
 
     
 
     <!-- Initialize Swiper -->
     <script>
+      window.onload = function(){
+        document.getElementById("bg-video").play();
+        document.getElementById("bg-video2").play();
+        
+      }
       var swiper = new Swiper(".mySwiper", {
         navigation: {
           nextEl: ".swiper-button-next",
