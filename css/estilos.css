@@ -2,6 +2,14 @@
     color:black
 }
 
+.colorAzul{
+    color:rgba(22, 125, 172, 0.642);
+}
+
+.colorRosa{
+    color:rgb(236, 215, 215);
+}
+
 .banner__container{
     height: 100vh;
     background: url(../img/fondo__banner.jpg);
@@ -30,6 +38,8 @@
     animation: mostrarContenedor 1s ease-in-out 1s both;
     
 }
+
+
 
 /* 
 ---------------------------------------------
@@ -106,6 +116,10 @@ banner
     font-weight: 900;
   }
 
+  .ornamento{
+    width: 35%;
+  }
+
   .catering__img{
     width: 400px;
     height: auto;
@@ -114,7 +128,9 @@ banner
   }
 
   .catering__cont-bodas {
-    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
+    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209));
+    /*box-shadow: rgba(250, 244, 144, 0.77) 0px 2px 4px;*/
+    /*border: 2px solid rgba(223, 171, 0, 0.524);*/
   }
 
   .video__logo{
@@ -141,13 +157,6 @@ banner
     font-size: 32px;
 }
 
-.video{
-    
-}
-.video__titulo-principal
-{
-    color:#000000;
-}
 .video__titulo{
     font-weight: bold;
     color: #000;
@@ -163,7 +172,7 @@ banner
 }
 
 .video__cont-imagen{
-    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215)), url(../img/fondo_contacto.png);
+    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209)), url(../img/fondo_contacto.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -179,7 +188,7 @@ banner
     
 }
 .video__cont-caracteristica div{
-    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215)), url(../img/fondo_quienes.jpg);
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209)), url(../img/fondo_quienes.jpg);
     /*background-image: url(../img/fondo_contacto.png);*/
     background-position: center;
     background-size: cover;
@@ -248,7 +257,7 @@ banner
 
 .footer__container{
     /*background-color:#0f1f29;*/
-    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209));
     height: 100%;
 }
 .footer__list{
@@ -299,7 +308,7 @@ banner
 
 
 .quienes-somos__cont-textos{
-    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
+    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209));
     position: relative;
     z-index: 10;
 }

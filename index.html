@@ -68,10 +68,13 @@
     | Header
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
-    <header class="header"
+    <header class="header overflow-x-hidden"
       >
       
       <div class="header__contenedor-principal">
+
+        <!-- logo -->
+        <img src="./img/logo.png" width="50px" alt="">
           
         <!-- icono hamburguesa -->
         <div id="hamburger" class="hamburger">
@@ -101,6 +104,8 @@
                 <img src="img/francia.svg" alt="" class="lenguajes__icono mx-2">
               </a>
             </div>
+
+
 
 
             <li class="menu__item mx-4"><a href="index.html" class="menu__link">HOME</a></li>
@@ -155,7 +160,7 @@
       
     </header>
 
-    <main>
+    <main class="overflow-hidden">
 
       <div class="main-banner" id="top">
         <video loop muted  id="bg-video">
@@ -210,7 +215,12 @@
 
         <div class="container">
 
-          <h2 class="my-3 text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms" >CATERING DE BEBIDA <br>BARRAS MOBILES</h2>
+          <h1 class="my-3 text-center wow fadeInUp colorAzul" data-wow-duration="2s" data-wow-delay="500ms" >CATERING DE BEBIDA </h1>
+          <h2 class="my-3 text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="700ms" >BARRAS MOBILES</h2>
+
+          <div class="d-flex justify-content-center align-items-center wow fadeIn mt-5" data-wow-duration="2s" data-wow-delay="700ms">
+            <img src="./img/orna5.png" alt="" class="ornamento">
+          </div>
 
           <div class="row justify-content-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="1000ms">
 
@@ -248,9 +258,7 @@
         <div class="video__container container-fluid py-3
         d-flex flex-column justify-content-center align-items-center">
 
-          <h2 class="video__titulo-principal text-center my-5 wow fadeIn" data-wow-duration="2s" data-wow-delay="500ms">
-            ...Vive la Experiencia que estabas Buscando...!
-          </h2>
+          
 
           <div class="video__row row px-3 mt-4">
 
@@ -260,12 +268,13 @@
               </video>
             </div>
 
-            <div class="video__cont-video col-12 col-xl-8 p-0 d-block d-md-none">
+            <div class="video__cont-video col-12 col-xl-8 p-0 d-block d-md-none wow fadeInLeft" data-wow-duration="2s" data-wow-delay="500ms">
               <video muted width="100%" controls height="100%" id="bg_video2" >
                 <source src="img/video2.mp4" type="video/mp4"  />
               </video>
             </div>
 
+            
             <div class="video__cont-imagen col-12 col-xl-4 p-3 
               d-flex justify-content-center align-items-center wow fadeInRight" data-wow-duration="2s" data-wow-delay="500ms">
               <h2 class="video__parrafo text-center">Ibiza Drink Experience<br>
@@ -276,12 +285,19 @@
                 Magníficas locaciones y embarcaciones para tu celebración <br>
               </h2>
             </div>
-
-            
           </div>
-
+        
           <div class="container">
           <div class="video__row-caracteristicas row overflow-hidden">
+
+            <h2 class="video__titulo-principal text-center colorAzul my-5 wow fadeIn" data-wow-duration="2s" data-wow-delay="500ms">
+              ...Vive la Experiencia que estabas Buscando...!
+            </h2>
+
+            <div class="d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="2s" data-wow-delay="700ms">
+              <img src="./img/orna5.png" alt="" class="ornamento">
+            </div>
+  
             
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
               d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms"
@@ -348,7 +364,9 @@
             </div>
 
           </div>
-          </div>
+
+        </div>
+
         
         </div>
       </section>
@@ -363,18 +381,11 @@
       <div class="testimonial wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
         <div class="container">
             <div class="section-header text-center mb-5">
-              <h2>Testimonios</h2>
+              <h2 class="colorAzul">Testimonios</h2>
                 <p class="testimonial__quedicen">Qué dicen nuestros clientes</p>
             </div>
             <div class="owl-carousel testimonials-carousel">
-                <div class="testimonial-item">
-                    
-                    <div class="testimonial-text">
-                        <h3>Nahuel Toscano - España </h3>
-                        <p class="">
-                          La experiencia vivida con el equipo de "Ibiza Drinks Experience" en un evento privado en una villa espectacular, con un spot de las vistas de la ciudad vieja Dalt Vila, fué lo mejor que me pasó en mucho tiempo. La energía del Team de trabajo y la pasión que hay en cada cocktail son insuperables. Había una atmosfera 100% de disfrute y gozo de la vida!!! Muchas Gracias.                        </p>
-                    </div>
-                </div>
+                
                 <div class="testimonial-item">
                     
                     <div class="testimonial-text">
@@ -385,16 +396,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="testimonial-item">
-                    
-                    <div class="testimonial-text">
-                        <h3> Mirko Heber - Alemania</h3>
-                        <p class="">
-                          I had a great day, the service was quick and lovely and the cocktails were super tasty.
-                          I’m looking forward to getting another party with them! 
-                        </p>
-                    </div>
-                </div>
+               
                 <div class="testimonial-item">
                     
                     <div class="testimonial-text">
@@ -418,13 +420,78 @@
                 <div class="testimonial-item">
                     
                     <div class="testimonial-text">
-                        <h3>Vitor de marco - Brazil </h3>
+                        <h3>Daniel Marino Alsina - España </h3>
                         <p class="">
-                          Contratamos Ibiza Drink Experience para um Aniversário em Ibiza e foi realmente incrível, drinks excelentes e super criativos, equipe muito eficiente e simpática. Foi tudo perfeito, super recomendamos! 
+                          Organizamos un importante evento corporativo para una reconocida marca.
+                          Desde IDE supieron adaptarse perfectamente y ofrecieron un servicio fantástico.
+                          Se destaca mucho el magnífico trato con los managers, la gran profesionalidad del personal, la calidad y diseño de barras y uniformes y la atención a los detalles.
+                          Además los cócteles estaban riquísimos. Crearon uno especial para nosotros que triunfó descaradamente.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Sharon Costi - Inglaterra </h3>
+                        <p class="">
+                          What a wonderful service we had from Angelo and his team... the best cocktails on the island, the most attentive staff and the most profesional team in Ibiza. No one ever had an empty glass, the cocktails were beautiful and tasty and they left our house impecable. Can't recommend enough....
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Selina Van Hulzen - Holanda </h3>
+                        <p class="">
+                          Wow! Angelo and his team made our fairies and farmers 10y anniversary even more special, from the start he has been so professional, quick and easy to communicate with. The cocktails tasted amazing and the staff so friendly, 💯 % recommend working with this company!!
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Luca & Daniela - Inglaterra </h3>
+                        <p class="">
+                          Organizamos un importante evento corporativo para una reconocida marca.
+                          Desde IDE supieron adaptarse perfectamente y ofrecieron un servicio fantástico.
+                          Se destaca mucho el magnífico trato con los managers, la gran profesionalidad del personal, la calidad y diseño de barras y uniformes y la atención a los detalles.
+                          Además los cócteles estaban riquísimos. Crearon uno especial para nosotros que triunfó descaradamente.
+                                                  </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Mario Kneidinger - Alemania </h3>
+                        <p class="">
+                          Amazing service, drinks have a great quality and how they present them is an Expierence on another level.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Emma Salvajiot - Suecia </h3>
+                        <p class="">
+                          We contracted Ibiza Drinks for our wedding, we were amazed with the professionalism of this catering, they are experts in what they do, also they were very patient in advising us and adapt them selves to our needs.
+                          The staff is very prepared, the cocktails have been delicious until the end of the event.
 
                         </p>
                     </div>
                 </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Cristina Mari Tur - España </h3>
+                        <p class="">
+                          Un servicio impecable y un equipo excelente y muy profesional.
+                          Atentos y resolutivos tanto en la organización como en el evento. Sin duda una empresa fiable con la que repetiría la experiencia.
+
+                        </p>
+                    </div>
+                </div>
+               
                
             </div>
         </div>
@@ -437,7 +504,7 @@
       | FOOTER
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="footer wow fadeIn" data-wow-duration="2s" data-wow-delay="1000ms">
+      <section class="footer wow fadeIn" data-wow-duration="2s" data-wow-delay="700ms">
         <div class="footer__container container-fluid py-3
         d-flex flex-column justify-content-center align-items-center shadow">
 
@@ -472,7 +539,7 @@
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
                 <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos colorBlack text-center">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">+34 666 35 24 49</li>  
                 
               </ul>
 
