@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face{
+/* @font-face{
     font-family: "tipografia";
     src: url("../fonts/Champagne\ &\ Limousines\ Bold.ttf");
     font-style: normal;
@@ -20,13 +20,21 @@
     src: url("../fonts/Bodoni.ttf");
     font-style: normal;
 }
+*/
+
+@font-face {
+    font-family: "kepler";
+    src: url("fonts/kepler.otf") format("opentype");
+}
 
 
 body{
-    font-family: "tipografia" !important;
+    font-family: "kepler";
 }
-p{
-    font-family: "tipografia-parrafo" !important;
+p,h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
 }
 section{
     overflow: hidden;
@@ -111,7 +119,8 @@ section{
     color: #000;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     display: block;
     width: 100%;
     transition: color 500ms ease-in-out;

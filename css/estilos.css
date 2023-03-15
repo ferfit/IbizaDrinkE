@@ -1,3 +1,7 @@
+
+
+
+
 .colorBlack{
     color:black
 }
@@ -8,6 +12,10 @@
 
 .colorRosa{
     color:rgb(236, 215, 215);
+}
+
+.colorGris{
+    color:rgb(183, 183, 183);
 }
 
 .banner__container{
@@ -117,7 +125,10 @@ banner
   }
 
   .ornamento{
-    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
   }
 
   .catering__img{
@@ -128,7 +139,7 @@ banner
   }
 
   .catering__cont-bodas {
-    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209));
+    background:#eceadf;
     /*box-shadow: rgba(250, 244, 144, 0.77) 0px 2px 4px;*/
     /*border: 2px solid rgba(223, 171, 0, 0.524);*/
   }
@@ -158,13 +169,13 @@ banner
 }
 
 .video__titulo{
-    font-weight: bold;
+    font-family: "kepler" !important;
+    
     color: #000;
 }
 .video__parrafo{
     font-size: 20px;
     line-height: 40px;
-    font-weight: 600;
     color: black;
 }
 .video__container{
@@ -172,14 +183,14 @@ banner
 }
 
 .video__cont-imagen{
-    background:linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209)), url(../img/fondo_contacto.png);
+    background:#eceadf;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .video__row-caracteristicas{
-    margin-top: 120px;
+    margin-top:50px;
 }
 
 .video__cont-caracteristica{
@@ -188,7 +199,7 @@ banner
     
 }
 .video__cont-caracteristica div{
-    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209)), url(../img/fondo_quienes.jpg);
+    background: #eceadf;
     /*background-image: url(../img/fondo_contacto.png);*/
     background-position: center;
     background-size: cover;
@@ -253,6 +264,7 @@ banner
 
 .footer{
     height: 400px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .footer__container{
@@ -308,18 +320,18 @@ banner
 
 
 .quienes-somos__cont-textos{
-    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(255, 209, 209));
+    background: #eceadf;
     position: relative;
     z-index: 10;
 }
 .quienes-somos__cont-textos p{
-    font-weight: 700;
+    font-weight: 400;
 
 }
-
-.galeria{
-
+.quienes-somos__cont-textos h1{
+    font-family: "kepler";
 }
+
 
 .ibiza{
     margin-top: 70px;
@@ -609,7 +621,7 @@ banner
 }
 
 .contacto-cont{
-    background: linear-gradient(90deg, rgb(185, 222, 237), rgb(236, 215, 215));
+    background: #eceadf;
     position: relative;
     z-index: 10;
     width: 100%;
@@ -703,7 +715,7 @@ input:focus, textarea:focus{
 
 .testimonial .testimonial-text h3 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
@@ -718,8 +730,7 @@ input:focus, textarea:focus{
 
 .testimonial .testimonial-text p {
     margin: 0;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 16px;
 }
 
 .testimonial .testimonial-text p::before {
@@ -755,6 +766,10 @@ input:focus, textarea:focus{
 @media (min-width: 576px) {  }
 
 @media (min-width: 768px) { 
+    .ornamento{
+        width: 35%;
+    }
+
     .footer{
         height: 350px;
     }
@@ -856,6 +871,8 @@ input:focus, textarea:focus{
 
     .quienes-somos__cont-textos p{
         text-align: justify;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
     }
 
     .servicios__container-nuestro-equipo{
