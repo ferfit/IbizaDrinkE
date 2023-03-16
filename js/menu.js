@@ -5,9 +5,6 @@ var hamburgerLinea = document.querySelectorAll('.hamburger__linea');
 var link = document.querySelectorAll('.menu__link');
 
 
-
-console.log(link);
-
 // creamos un evento que escuche el scroll y al detectarlo se ejecute una funcion,
 document.addEventListener('scroll',function(){   
     var posicion = window.scrollY;

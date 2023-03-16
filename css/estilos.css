@@ -343,7 +343,7 @@ banner
 
 .servicios__container{
     height: 100vh;
-    background: url(../img/2N7A2375.jpg);
+    background: url(../img/servicios.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -382,8 +382,8 @@ banner
 }
 
 .servicios__container-nuestro-equipo{
-    background-color: #0f1f29 ;
-    height: 1500px;
+    /*background: #eceadf;*/
+    height: auto;
 }
 
 .servicios__cont-imagen-nuestro-equipo{
@@ -394,18 +394,18 @@ banner
 }
 
 .servicios__parrafos{
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
 }
 .camareros{
     background-image: url(../img/foto3.jpg);
 }
 
 .servicios__cont-datos-nuestro-equipo{
-    background-color: #f2cf8d ;
+    background: #eceadf;
 }
 .servicios__cont-imagen-base{
-    background-image: url(../img/base.jpeg);
+    background-image: url(../img/base.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -434,6 +434,12 @@ banner
 
 .servicios__cont-pack{
     height: auto;
+    background: #eceadf;
+    font-family: "Raleway";
+}
+
+.servicios__cont-pack h2{
+    font-family: "kepler";
 }
 
 .servicios__cont-pack div:nth-child(1){
@@ -653,12 +659,15 @@ input:focus, textarea:focus{
 
 
 
+.contacto-texto h2{
+    font-family: "kepler";
+}
 
-.contacto-texto h2,
 .contacto-texto p,
 .contacto-texto a {
     color:#0f1f29;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: "Raleway";
 }
 .contacto-texto h2{
     font-size: 35px;
@@ -793,9 +802,9 @@ input:focus, textarea:focus{
         font-size: 100px;
     }
 
-    .servicios__container-nuestro-equipo{
+    /* .servicios__container-nuestro-equipo{
         height: 1500px;
-    }
+    } */
 
     .servicios__cont-imagen-nuestro-equipo{
         height: auto;
@@ -843,9 +852,9 @@ input:focus, textarea:focus{
     .contacto{
         height: 750px;
     }
-    .servicios__container-nuestro-equipo{
+    /* .servicios__container-nuestro-equipo{
         height: 1800px;
-    }
+    } */
     .servicios__cont-imagen-nuestro-equipo{
         height: auto;
     }
@@ -875,9 +884,9 @@ input:focus, textarea:focus{
         font-weight: 400;
     }
 
-    .servicios__container-nuestro-equipo{
+    /* .servicios__container-nuestro-equipo{
         height: 700px;
-    }
+    } */
 
     .servicios__nuestro-equipo .row{
         height: auto;
@@ -918,7 +927,7 @@ input:focus, textarea:focus{
     }
 
     .servicios__container-nuestro-equipo {
-        height: 900px;
+        /*height: 900px;*/
     }
 
     .servicios__container-nuestro-equipo .row:nth-child(2){
