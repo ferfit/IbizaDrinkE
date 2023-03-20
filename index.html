@@ -23,13 +23,12 @@
     <link rel="stylesheet" href="css/whatsapp.css">
     <link rel="stylesheet" href="lib/animate/animate.css">
 
-
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Swiper -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <!-- owl carrousel -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -79,7 +78,7 @@
       <div class="header__contenedor-principal">
 
         <!-- logo -->
-        <img src="./img/logo.png" width="50px" alt="">
+        <img src="./img/logo.png" width="50px" alt="" class="">
           
         <!-- icono hamburguesa -->
         <div id="hamburger" class="hamburger">
@@ -167,20 +166,32 @@
 
     <main class="overflow-hidden">
 
-      <div class="main-banner wow fadeIn" id="top">
-        <video loop muted  id="bg-video">
+      <!-- Slider main container -->
+      <div class="swiper d-md-none">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./img/galeria/1.jpeg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/galeria/2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/galeria/3.jpg" alt=""></div>
+        </div>
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+          
+
+      <div class="main-banner wow fadeIn d-none d-md-block" id="top">
+        <video loop muted autoplay id="bg-video">
             <source src="./img/video.mp4" type="video/mp4" />
         </video>
 
         <div class="video-overlay header-text">
             <div class="caption d-flex justify-content-center align-items-center">
-                <!-- <h6>work harder, get stronger</h6>
-                <h2>easy with our <em>gym</em></h2>
-                <div class="main-button scroll-to-section">
-                    <a href="#features">Become a member</a>
-                </div> -->
-                <!-- <img src="img/logo.png" alt="" class="d-block video__logo"> -->
-            
             </div>
         </div>
       </div>
@@ -221,7 +232,7 @@
         <div class="container">
 
           <h1 class="my-3 text-center wow fadeInUp colorAzul" data-wow-duration="2s" data-wow-delay="500ms" >CATERING DE BEBIDA </h1>
-          <h2 class="my-3 text-center wow fadeInUp colorGris" data-wow-duration="2s" data-wow-delay="700ms" >BARRAS MOBILES</h2>
+          <h2 class="my-3 text-center wow fadeInUp colorGris" data-wow-duration="2s" data-wow-delay="700ms" >BARRAS MOVILES</h2>
 
           <div class="wow fadeIn mt-3 ornamento mx-auto" data-wow-duration="2s" data-wow-delay="700ms">
             <img src="./img/orna5.png" alt="" width="100%" class="">
@@ -284,11 +295,11 @@
               d-flex flex-column justify-content-center align-items-center wow fadeInRight" data-wow-duration="2s" data-wow-delay="500ms">
               <h2>Ibiza Drinks Experience</h2>
               <p class="video__parrafo text-center">
-                  Te invitamos a vivir una experiencia única e inolvidable <br> 
-                  Servicio de alta calidad e insuperable profesionalidad  <br>
-                  Exclusiva carta de coctelería de autor <br>
-                  Elegantes barras móviles adaptables a todo tipo de evento  <br>
-                  Magníficas locaciones y embarcaciones para tu celebración <br>
+                  Te invitamos a vivir una experiencia única e inolvidable. <br> 
+                  Servicio de alta calidad e insuperable profesionalidad.  <br>
+                  Exclusiva carta de coctelería de autor. <br>
+                  Elegantes barras móviles adaptables a todo tipo de evento.  <br>
+                  Magníficas locaciones y embarcaciones para tu celebración. <br>
               </p>
             </div>
           </div>
@@ -317,7 +328,7 @@
                 Propuesta <br> innovadora
               </h3>
               <p class="video__parrafo p-1 text-center ">
-                Somos un concepto revolucionario en el mundo de la coctelería. Apostamos a mezclar el arte y la elegancia en cada cóctel y nos distinguimos por nuestro creativo y espectacular catering
+                Somos un concepto revolucionario en el mundo de la coctelería. Apostamos a mezclar el arte y la elegancia en cada cóctel y nos distinguimos por nuestro creativo y espectacular catering.
               </p>
               </div>
 
@@ -333,7 +344,7 @@
                   Excelentes <br> profesionales
                 </h3>
                 <p class="video__parrafo p-1 text-center">
-                  Aunque llevamos años en el rubro continuamos capacitándonos para seguir creciendo. Nuestra audacia nos permite llegar a lugares no explorados, satisfaciendo a innumerables clientes cada año            
+                  Aunque llevamos años en el rubro continuamos capacitándonos para seguir creciendo. Nuestra audacia nos permite llegar a lugares no explorados, satisfaciendo a innumerables clientes cada año.            
                 </p>
               </div>
 
@@ -349,7 +360,7 @@
                 Calidad de materia <br> prima
               </h3>
               <p class="video__parrafo p-1 text-center">
-                Contamos con proveedores de marcas reconocidas y nuestra selección en bebidas es de primera calidad. Así mismo, utilizamos productos frescos y orgánicos para la elaboración, presentación y acompañamiento de los cócteles
+                Contamos con proveedores de marcas reconocidas y nuestra selección en bebidas es de primera calidad. Así mismo, utilizamos productos frescos y orgánicos para la elaboración, presentación y acompañamiento de los cócteles.
               </p>
               </div>
 
@@ -365,7 +376,7 @@
                 Compromiso <br> ecológico
               </h3>
               <p class="video__parrafo p-1 text-center">
-                Nuestras barras móviles están construidas artesanalmente con materiales reciclados, dándoles una mayor vida útil. Tenemos un compromiso en diferenciar los desechos en cada evento, contribuyendo a un cuidado medioambiental            </p>
+                Nuestras barras móviles están construidas artesanalmente con materiales reciclados, dándoles una mayor vida útil. Tenemos un compromiso en diferenciar los desechos en cada evento, contribuyendo a un cuidado medioambiental.            </p>
               </div>
 
               
@@ -569,24 +580,38 @@
         <i class="bx bxl-whatsapp whatsapp__icono"></i>
       </a> -->
 
-    
-    
-    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
-    
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
 
-    
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+
+
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Owl -->
@@ -596,39 +621,14 @@
     <script src="js/nav.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
-    
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    
 
     <script src="lib/wow/wow.min.js"></script>
     <script>
        new WOW().init();
     </script>
-
-    
-
-    <!-- Initialize Swiper -->
-    <script>
-
-      window.addEventListener("load",function(){
-        document.getElementById("bg-video").play();
-        /*document.getElementById("bg-video2").play();*/
-      })
-
-
-      /* var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
- */
-  
-      
-    </script>
-
-    
 
   </body>
 </html>

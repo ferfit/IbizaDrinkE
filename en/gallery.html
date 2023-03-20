@@ -18,16 +18,16 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/hamburger.css">
     <link rel="stylesheet" href="../css/lenguajes.css">
+    <link rel="stylesheet" href="../lib/animate/animate.css">
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     
-    
     <!-- Jquery -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <!-- Nano Gallery2 -->
-    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
-
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
@@ -47,7 +47,11 @@
     <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <meta name="description" content="High quality cocktail catering in ibiza, professional bartenders and servers for private services. Live the experience you were looking for.">
     <meta name="keywords" content="catering ibiza, cocktail catering, private service, event organizer, events at your house, bartender and waiter service">
     <meta name="author" content="Tu Proyecto Web">
@@ -64,6 +68,9 @@
       >
       
       <div class="header__contenedor-principal">
+
+        <!-- logo -->
+        <img src="../img/logo.png" width="50px" alt="">
           
         <!-- icono hamburguesa -->
         <div id="hamburger" class="hamburger">
@@ -96,7 +103,7 @@
 
 
             <li class="menu__item mx-4"><a href="index.html" class="menu__link">HOME</a></li>
-            <li class="menu__item mx-4"><a href="about-us.html" class="menu__link">ABOUTS US</a></li>
+            <li class="menu__item mx-4"><a href="about-us.html" class="menu__link">ABOUT US</a></li>
             <li class="menu__item mx-4"><a href="gallery.html" class="menu__link">GALLERY</a> </li>
             <li class="menu__item mx-4"><a href="services.html" class="menu__link">SERVICES</a></li>
             <li class="menu__item mx-4"><a href="contact.html" class="menu__link">CONTACT</a></li>
@@ -148,74 +155,623 @@
     </header>
 
     <main>
+
+      <!-- 
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | BANNER
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="servicios wow fadeIn"
+        >
+
+        <div class="servicios__container container-fluid p-0 shadow rounded">
+          
+          <h1 class="servicios__titulo-principal text-white" >GALLERY</h1>
+        </div>
+
+        
+      </section>
     
       <!-- 
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | GALERIA
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="galeria p-3 "
-        >
 
-        <div class="galeria__container container-fluid p-1 p-md-3 shadow rounded">
+      <section id="portfolio" class="section-bg overflow-hidden">
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="portfolio-flters">
+  
+                
 
-          <div ID="ibiza" class="mt-5 pt-3" data-nanogallery2='{
-            "itemsBaseURL": "https://ibizadrinksexperience.com/img/galeria/",
-            "thumbnailWidth": "auto",
-            "colorScheme": {
-              "thumbnail": {
-                "borderColor": "rgba(242,207,141,1)"
-              }
-            },
-            "thumbnailLabel": {
-              "position": "overImageOnBottom"
-            },
-            "thumbnailAlignment": "center",
-            "thumbnailOpenImage": true
-          }'>
-          <a href="-01.jpg" data-ngthumb="-01min.jpg" data-ngdesc=""></a>
-          <a href="2.jpg" data-ngthumb="2min.jpg" data-ngdesc=""></a>
-          <a href="3.jpg" data-ngthumb="3min.jpg" data-ngdesc=""></a>
-          <a href="1.jpg" data-ngthumb="1min.jpg" data-ngdesc=""></a>
-          <a href="5.jpg" data-ngthumb="5min.jpg" data-ngdesc=""></a>
-          <a href="17.jpg" data-ngthumb="17min.jpg" data-ngdesc=""></a>
-          <a href="-04.jpg" data-ngthumb="-04min.jpg" data-ngdesc=""></a>
-          <a href="6.jpg" data-ngthumb="6min.jpg" data-ngdesc=""></a>
-          <a href="7.jpg" data-ngthumb="7min.jpg" data-ngdesc=""></a>
-          <a href="8.jpg" data-ngthumb="8min.jpg" data-ngdesc=""></a>
-          <a href="9.jpg" data-ngthumb="9min.jpg" data-ngdesc=""></a>
-          <a href="10.jpg" data-ngthumb="10min.jpg" data-ngdesc=""></a>
-          <a href="12.jpg" data-ngthumb="12min.jpg" data-ngdesc=""></a>
-          <a href="11.jpg" data-ngthumb="11min.jpg" data-ngdesc=""></a>
-          <a href="13.jpg" data-ngthumb="13min.jpg" data-ngdesc=""></a>
-          <a href="14.jpg" data-ngthumb="14min.jpg" data-ngdesc=""></a>
-          <a href="15.jpg" data-ngthumb="15min.jpg" data-ngdesc=""></a>
-          <a href="16.jpg" data-ngthumb="16min.jpg" data-ngdesc=""></a>
-          <a href="4.jpg" data-ngthumb="4min.jpg" data-ngdesc=""></a>
-          <a href="18.jpg" data-ngthumb="18min.jpg" data-ngdesc=""></a>
-          <a href="19.jpg" data-ngthumb="19min.jpg" data-ngdesc=""></a>
-          <a href="20.jpg" data-ngthumb="20min.jpg" data-ngdesc=""></a>
-          <a href="21.jpg" data-ngthumb="21min.jpg" data-ngdesc=""></a>
-          <a href="22.jpg" data-ngthumb="22min.jpg" data-ngdesc=""></a>
-          <a href="23.jpg" data-ngthumb="23min.jpg" data-ngdesc=""></a>
-          <a href="24.jpg" data-ngthumb="24min.jpg" data-ngdesc=""></a>
-          <a href="25.jpg" data-ngthumb="25min.jpg" data-ngdesc=""></a>
-          <a href="26.jpg" data-ngthumb="26min.jpg" data-ngdesc=""></a>
-          <a href="27.jpg" data-ngthumb="27min.jpg" data-ngdesc=""></a>
-          <a href="28.jpg" data-ngthumb="28min.jpg" data-ngdesc=""></a>
-          <a href="29.jpg" data-ngthumb="29min.jpg" data-ngdesc=""></a>
-    
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row portfolio-container">
+            <!-- Rejas -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/1.jpeg" class="img-fluid" alt="">
+                  <a href="../img/galeria/1.jpeg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/2.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/2.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/3.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/3.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/4-min.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/4.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/5.jpeg" class="img-fluid" alt="">
+                  <a href="../img/galeria/5.jpeg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/6.jpeg" class="img-fluid" alt="">
+                  <a href="../img/galeria/6.jpeg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/7.jpeg" class="img-fluid" alt="">
+                  <a href="../img/galeria/7.jpeg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/8.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/8.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/9.jpeg" class="img-fluid" alt="">
+                  <a href="../img/galeria/9.jpeg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/10.jpeg" class="img-fluid" alt="">
+                  <a href="../img/galeria/10.jpeg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/11.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/11.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/12.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/12.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/13.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/13.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/14.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/14.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/15.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/15.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/16.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/16.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/17.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/17.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/18.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/18.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/19.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/19.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/20.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/20.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/21.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/21.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/22.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/22.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/23.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/23.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/24.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/24.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/25.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/25.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/26.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/26.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/27.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/27.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/29.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/29.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/30.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/30.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/31.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/31.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/32.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/32.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/33.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/33.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/34.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/34.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/35.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/35.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/36.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/36.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/37.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/37.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/38.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/38.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/39.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/39.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/40.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/40.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/41.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/41.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/42.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/42.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/43.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/43.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/44.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/44.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/45.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/45.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/46.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/46.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/47.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/47.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/48.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/48.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/50.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/50.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/51.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/51.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/53.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/53.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/54.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/54.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/55.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/55.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+           
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rejas">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="../img/galeria/56.jpg" class="img-fluid" alt="">
+                  <a href="../img/galeria/56.jpg" data-lightbox="portfolio" data-title="" class="link-preview"
+                    ><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
+            </div>
+  
+          </div>
+  
         </div>
-
-       
-
-      </div>
-
-
-        
       </section>
-
-      
+    
 
       
 
@@ -226,7 +782,7 @@
       | FOOTER
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <footer class="footer p-3">
+      <footer class="footer wow fadeIn mt-5" data-wow-duration="2s" data-wow-delay="700ms">
         <div class="footer__container container-fluid py-3
         d-flex flex-column justify-content-center align-items-center shadow rounded">
 
@@ -235,8 +791,8 @@
 
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
-                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos text-white text-center mx-auto">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos colorBlack text-center mx-auto">+34 666 35 24 49</li>  
                 
               </ul>
 
@@ -244,24 +800,24 @@
 
             <div class="footer__cont-menu col-6 col-md-4">
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-around">
-                <li class=""><a href="index.html" class="text-decoration-none text-white">HOME</a></li>
-                <li class=""><a href="about-us.html" class="text-decoration-none text-white">ABOUT US</a></li>
-                <li class=""><a href="gallery.html" class="text-decoration-none text-white">GALLERY</a> </li>
-                <li class=""><a href="services.html" class="text-decoration-none text-white">SERVICES</a></li>
-                <li class=""><a href="contact.html" class="text-decoration-none text-white">CONTACT</a></li>
+                <li class=""><a href="index.html" class="text-decoration-none colorBlack">HOME</a></li>
+                <li class=""><a href="about-us.html" class="text-decoration-none colorBlack">ABOUT US</a></li>
+                <li class=""><a href="gallery.html" class="text-decoration-none colorBlack">GALLERY</a> </li>
+                <li class=""><a href="services.html" class="text-decoration-none colorBlack">SERVICES</a></li>
+                <li class=""><a href="contact.html" class="text-decoration-none colorBlack">CONTACT</a></li>
               </ul>
             </div>
 
             <div class="footer__cont-imagen col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <img src="../img/logo.svg" class="footer__logo" alt="">
+              <img src="../img/logo.png" class="footer__logo wow rotateIn" data-wow-duration="2s" data-wow-delay="1500ms" alt="">
             </div>
 
             <div class="footer__cont-datos d-none d-md-block d-flex justify-content-center align-items-center col-12 col-md-4">
 
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
-                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos text-white text-center">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos colorBlack text-center">34 666 35 24 49</li>  
                 
               </ul>
 
@@ -270,7 +826,7 @@
             
 
             <div class="container p-0 mt-3">
-              <h3 class=" footer__copy text-center py-2 m-0 text-white">Coryright@<script>document.write(new Date().getFullYear());</script> || Design to <a class="text-white text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
+              <h3 class=" footer__copy text-center py-2 m-0 colorBlack">Coryright@<script>document.write(new Date().getFullYear());</script> || Design to <a class="colorBlack text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
             </div>
 
           </div>
@@ -301,6 +857,15 @@
     <!-- Gererales JS -->
     <script src="../js/nav.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script src="../lib/wow/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
 
     
 
