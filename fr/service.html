@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/lenguajes.css">
+    <link rel="stylesheet" href="../lib/animate/animate.css">
+
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
@@ -38,6 +40,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <meta name="description" content="Restauration de cocktails de haute qualité à Ibiza, service privé de mixologues et serveurs professionnels.  Vivez l'expérience que vous recherchiez.">
     <meta name="keywords" content="traiteur ibiza, restauration de cocktails, service prive, organisateur de l'evenement, evenements chez vous, service de barmanet serveur">
@@ -56,6 +63,9 @@
       >
       
       <div class="header__contenedor-principal">
+
+        <!-- logo -->
+        <img src="../img/logo.png" width="50px" alt="">
           
         <!-- icono hamburguesa -->
         <div id="hamburger" class="hamburger">
@@ -146,7 +156,7 @@
       | BANNER
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="servicios p-3"
+      <section class="servicios wow fadeIn"
         >
 
         <div class="servicios__container container-fluid p-0 shadow rounded">
@@ -164,40 +174,43 @@
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
 
-      <section class="video p-3">
-        <div class="video__container container-fluid py-3
-          d-flex flex-column justify-content-center align-items-start shadow rounded">
+      <section class="video p-3 container">
 
-          <h2 class="servicios__eventos text-white">
-            Notre vaste expérience dans l'industrie nous permet de
-            planifier toutes sortes d'événements. Nous sommes disponibles pour:
-          </h2>
+        
+        <h2 class="text-center colorAzul wow fadeInUp mt-5" data-wow-duration="2s" data-wow-delay="500ms">
+          Notre vaste expérience dans l'industrie nous permet de
+          planifier toutes sortes d'événements.
+        </h2>
 
-          <ul class="mt-3">
-            <li class="text-white">Événements privés</li>
-            <li class="text-white">Événements de bateau</li>
-            <li class="text-white">Mariages</li>
-            <li class="text-white">Anniversaires</li>
-            <li class="text-white">Festival</li>
-            <li class="text-white">Foires et congrès</li>
-          </ul>     
-
+        <div class="wow fadeIn mt-3 ornamento mx-auto" data-wow-duration="2s" data-wow-delay="700ms">
+          <img src="../img/orna5.png" alt="" width="100%" class="">
         </div>
       </section>
 
-      <section class="servicios__nuestro-equipo p-3">
+      <section class="servicios__nuestro-equipo p-3 container">
         <div class="servicios__container-nuestro-equipo container-fluid py-3
-          d-flex flex-column justify-content-center align-items-center shadow rounded">
+          d-flex flex-column justify-content-center align-items-center">
+          
 
-          <div class="row p-2 p-md-4 w-100">
-            <div class="servicios__cont-imagen-nuestro-equipo col-12 col-xl-4 p-0 overflow-hidden">
+          <div class="row p-0">
+
+            <div class="flex flex-column col-12 col-lg-4 rounded overflow-hidden wow fadeInUp mt-4 mt-md-0 " data-wow-duration="2s" data-wow-delay="500ms">
               <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../../img/equipo/1.jpg" class="d-block w-100" alt="...">
+                    <img src="../img/equipo/1.png" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="../../img/equipo/4.jpg" class="d-block w-100" alt="...">
+                    <img src="../img/equipo/2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/equipo/3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/equipo/4.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/equipo/5.png" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -209,67 +222,98 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+              <div class="servicios__cont-datos-nuestro-equipo p-4">
+                <h2 class="text-dark text-center">Notre équipe à votre écoute</h2>
+                <p class="text-dark servicios__parrafos">
+                  Nous avons d'excellents professionnels, y compris des gestionnaires d'événements, des barmans, des serveurs et des serveurs de bar, formés pour que tout se passe bien. Notre priorité est de satisfaire les besoins de nos clients et de nous démarquer par notre capacité à travailler en équipe. Nous sommes en phase avec les nouvelles tendances sans négliger les cocktails classiques, base incontestable de notre métier.
+                </p> 
+              </div>
             </div>
 
-            <div class="servicios__cont-datos-nuestro-equipo col-12 col-xl-8 p-4">
-              <h2 class="text-dark">Notre équipe à votre écoute:</h2>
-              <p class="text-dark servicios__parrafos">
-                Nous avons d'excellents professionnels, y compris des gestionnaires d'événements, des barmans, des serveurs et des serveurs de bar, formés pour que tout se passe bien. Notre priorité est de satisfaire les besoins de nos clients et de nous démarquer par notre capacité à travailler en équipe. Nous sommes en phase avec les nouvelles tendances sans négliger les cocktails classiques, base incontestable de notre métier.
-              </p>
-              
-            </div>
+            <div class="flex flex-column col-12 col-lg-4 rounded overflow-hidden wow fadeInUp mt-4 mt-md-0 " data-wow-duration="2s" data-wow-delay="700ms">
 
-          </div>
-
-          <div class="row p-2 p-md-4  w-100">
-            
-            <div class="servicios__cont-imagen-nuestro-equipo  col-12 col-xl-4 p-0 overflow-hidden">
-              <div id="carouselExampleControls4" class="carousel slide " data-bs-ride="carousel">
+              <div id="carouselExampleControls2" class="carousel slide w-100 h-auto" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/camareros/1.jpg" class="d-block w-100" alt="...">
+                    <img src="../img/barras/1.png" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/camareros/2.jpg" class="d-block w-100" alt="...">
+                    <img src="../img/barras/2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/barras/3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/barras/4.png" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+
+              <div class="servicios__cont-datos-nuestro-equipo p-4">
+                <h2 class="text-dark text-center">Bar <br> transportables</h2>
+                <p class="text-dark servicios__parrafos">
+                  Nous sommes fans de détails, nous avons donc des bars transportables exclusifs à votre disposition dans toute Ibiza. C'est un projet qui a été créé pour répondre aux besoins de notre équipe, et ainsi pouvoir fournir un service exclusif là où vous le souhaitez.
+                  Nos bars sont entièrement fabriqués à la main par un menuisier renommé de l'île. Le résultat final est des barres fonctionnelles aux finitions minimalistes, capables de couvrir les petits et grands événements.
+                </p>
+                
+              </div>
+
             </div>
 
-            <div class="servicios__cont-datos-nuestro-equipo col-12 col-xl-8 p-4">
-              <h2 class="text-dark ">Services de serveurs et barmans</h2>
-              <p class="text-dark servicios__parrafos">
-                Nous avons des professionnels certifiés pour fournir un service de haute qualité et prendre soin de chaque petit détail. Si vous avez toute l'infrastructure organisée pour votre événement et que vous n'avez besoin que du personnel: manager, équipe de barmans ou de serveurs, vous pouvez compter sur nous.
-              </p>
-              
-            </div>
+            <div class="flex flex-column col-12 col-lg-4 rounded overflow-hidden wow fadeInUp mt-4 mt-md-0 " data-wow-duration="2s" data-wow-delay="900ms">
 
-            
+              <div id="carouselExampleControls3" class="carousel slide w-100 h-auto" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/locacion/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/locacion/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="servicios__cont-datos-nuestro-equipo p-4 ">
+                <h2 class="text-dark text-center">Lieux <br> exclusifs</h2>
+                <p class="text-dark servicios__parrafos">
+                  Si vous n'avez pas de lieu pour organiser votre événement, nous mettons à votre disposition un portefeuille diversifié de professionnels, issus du monde immobilier et nautique, afin que vous puissiez trouver le bon villa ou bateau pour votre fête.
+                </p>
+                
+              </div>
+  
+            </div>
 
           </div>
-
-          
+  
         </div>
       </section>
 
-      <section class="video p-3">
-        <div class="video__container container-fluid p-4
-          d-flex flex-column justify-content-center align-items-center shadow rounded">
+      <section class="video p-3 container">
+        <div class="video__container
+          d-flex flex-column justify-content-center align-items-center">
 
           <h1 class="text-white">
             PACKS NÉGOCIABLES
           </h1>
 
-          <div class="servicios__cont-pack row w-100 mt-5">
-            <div class="col-12 col-md-6 bg-white p-3">
+          <div class="servicios__cont-pack row w-100 mt-5 wow fadeInUp " data-wow-duration="2s" data-wow-delay="500ms">
+            <div class="col-12 col-md-6  p-3">
               <h2 class="text-dark">
                 Service de base:
               </h2>
@@ -304,8 +348,8 @@
             
           </div>
 
-          <div class="servicios__cont-pack row w-100 mt-5">
-            <div class="col-12 col-md-6 bg-white p-3">
+          <div class="servicios__cont-pack row w-100 mt-5 wow fadeInUp " data-wow-duration="2s" data-wow-delay="700ms">
+            <div class="col-12 col-md-6  p-3">
               <h2 class="text-dark">
                 Service standard:
               </h2>
@@ -342,8 +386,8 @@
             
           </div>
 
-          <div class="servicios__cont-pack row w-100 mt-5">
-            <div class="col-12 col-md-6 bg-white p-3">
+          <div class="servicios__cont-pack row w-100 mt-5 wow fadeInUp " data-wow-duration="2s" data-wow-delay="900ms">
+            <div class="col-12 col-md-6 p-3">
               <h2 class="text-dark">
                 Service premium:
               </h2>
@@ -356,7 +400,7 @@
                 <li class="text-dark">Fruit</li>
                 <li class="text-dark">Boissons illimitées
                   <ul>
-                    <li>Vins espagnols: rouges, blancs et rosés</li>
+                    <li>Vins importé: rouges, blancs et rosés</li>
                     <li>Champagne Moët & Chandon</li>
                     <li>Boissons mixtes: à base de vodka, gin, rhum, whisky ou choisissez votre préférée</li>
                     <li>Bière dans une bouteille en verre</li>
@@ -368,11 +412,11 @@
 
               <h3 class="text-dark servicios__textos-finales">Quatre (4) cocktails de votre choix parmi notre menu exclusif basé sur:</h3>
               <ul>
-                <li>Mezcal</li>
-                <li> Tequila Don Julio</li>
+                <li>Mezcal Burrito Fiestero </li>
+                <li>Tequila Patron, 1800</li>
                 <li>Gin Hendrik's / Gin Mare / Gin Vine</li>
-                <li> Vodka Belvedere</li>
-                <li> Ron Kraken</li>
+                <li>Vodka Belvedere</li>
+                <li>Ron diplomático </li>
                 <li>Ou choisissez le distillat qui correspond le mieux à votre style</li>
               </ul>
               
@@ -391,86 +435,6 @@
         </div>
       </section>
 
-      <section class="servicios__nuestro-equipo p-3">
-        <div class="servicios__container-nuestro-equipo container-fluid py-3
-          d-flex flex-column justify-content-center align-items-center shadow rounded">
-
-          <div class="row p-2 p-md-4 w-100">
-            <div class="servicios__cont-imagen-nuestro-equipo img-barras col-12 col-xl-4 p-0 overflow-hidden">
-              <div id="carouselExampleControls2" class="carousel slide w-100 h-auto" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../../img/barras/1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../../img/barras/2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../../img/barras/3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="servicios__cont-datos-nuestro-equipo col-12 col-xl-8 p-4">
-              <h2 class="text-dark">Bar transportables</h2>
-              <p class="text-dark servicios__parrafos">
-                Nous sommes fans de détails, nous avons donc des bars transportables exclusifs à votre disposition dans toute Ibiza. C'est un projet qui a été créé pour répondre aux besoins de notre équipe, et ainsi pouvoir fournir un service exclusif là où vous le souhaitez.
-                Nos bars sont entièrement fabriqués à la main par un menuisier renommé de l'île. Le résultat final est des barres fonctionnelles aux finitions minimalistes, capables de couvrir les petits et grands événements.
-              </p>
-              
-            </div>
-
-          </div>
-
-          <div class="row p-2 p-md-4  w-100">
-            
-            <div class="servicios__cont-imagen-nuestro-equipo  col-12 col-xl-4 p-0 overflow-hidden">
-              <div id="carouselExampleControls3" class="carousel slide w-100 h-auto" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../img/locacion/2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/locacion/3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="servicios__cont-datos-nuestro-equipo  col-12 col-xl-8 p-4">
-              <h2 class="text-dark">Lieux exclusifs</h2>
-              <p class="text-dark servicios__parrafos">
-                Si vous n'avez pas de lieu pour organiser votre événement, nous mettons à votre disposition un portefeuille diversifié de professionnels, issus du monde immobilier et nautique, afin que vous puissiez trouver le bon villa ou bateau pour votre fête.
-              </p>
-              
-            </div>
-
-            
-
-          </div>
-
-          
-        </div>
-      </section>
-      
-
     </main>
 
     <!-- 
@@ -478,7 +442,7 @@
       | FOOTER
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <footer class="footer p-3">
+      <footer class="footer wow fadeIn mt-5" data-wow-duration="2s" data-wow-delay="700ms">
         <div class="footer__container container-fluid py-3
         d-flex flex-column justify-content-center align-items-center shadow rounded">
 
@@ -487,8 +451,8 @@
 
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
-                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos text-white text-center mx-auto">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos colorBlack text-center mx-auto">+34 666 35 24 49</li>  
                 
               </ul>
 
@@ -496,24 +460,24 @@
 
             <div class="footer__cont-menu col-6 col-md-4">
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-around">
-                <li class=""><a href="debut.html" class="text-decoration-none text-white">DEBUT</a></li>
-                <li class=""><a href="qui-sommes.html" class="text-decoration-none text-white">QUI SOMMES</a></li>
-                <li class=""><a href="galerie.html" class="text-decoration-none text-white">GALERIE</a> </li>
-                <li class=""><a href="service.html" class="text-decoration-none text-white">SERVICES</a></li>
-                <li class=""><a href="contact.html" class="text-decoration-none text-white">CONTACT</a></li>
+                <li class=""><a href="debut.html" class="text-decoration-none colorBlack">DEBUT</a></li>
+                <li class=""><a href="qui-sommes.html" class="text-decoration-none colorBlack">QUI SOMMES</a></li>
+                <li class=""><a href="galerie.html" class="text-decoration-none colorBlack">GALERIE</a> </li>
+                <li class=""><a href="service.html" class="text-decoration-none colorBlack">SERVICES</a></li>
+                <li class=""><a href="contact.html" class="text-decoration-none colorBlack">CONTACT</a></li>
               </ul>
             </div>
 
             <div class="footer__cont-imagen col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <img src="../img/logo.svg" class="footer__logo" alt="">
+              <img src="../img/logo.png" class="footer__logo" alt="">
             </div>
 
             <div class="footer__cont-datos d-none d-md-block d-flex justify-content-center align-items-center col-12 col-md-4">
 
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
-                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos text-white text-center">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos colorBlack text-center">+34 666 35 24 49</li>  
                 
               </ul>
 
@@ -522,7 +486,7 @@
             
 
             <div class="container p-0 mt-3">
-              <h3 class=" footer__copy text-center py-2 m-0 text-white">Coryright@<script>document.write(new Date().getFullYear());</script> || Développé par <a class="text-white text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
+              <h3 class=" footer__copy text-center py-2 m-0 colorBlack">Coryright@<script>document.write(new Date().getFullYear());</script> || Développé par <a class="colorBlack text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
             </div>
 
           </div>
@@ -553,6 +517,10 @@
     <!-- Gererales JS -->
     <script src="../js/nav.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
 
     
 

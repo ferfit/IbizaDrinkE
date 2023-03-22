@@ -11,19 +11,25 @@
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/lenguajes.css">
+    <link rel="stylesheet" href="../css/whatsapp.css">
+    <link rel="stylesheet" href="../lib/animate/animate.css">
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Swiper -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <!-- owl carrousel -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
@@ -44,6 +50,11 @@
     <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     
     <meta name="description" content="Restauration de cocktails de haute qualité à Ibiza, service privé de mixologues et serveurs professionnels.  Vivez l'expérience que vous recherchiez.">
     <meta name="keywords" content="traiteur ibiza, restauration de cocktails, service prive, organisateur de l'evenement, evenements chez vous, service de barmanet serveur">
@@ -62,6 +73,9 @@
       >
       
       <div class="header__contenedor-principal">
+
+        <!-- logo -->
+        <img src="../img/logo.png" width="50px" alt="" class="">
           
         <!-- icono hamburguesa -->
         <div id="hamburger" class="hamburger">
@@ -145,37 +159,87 @@
       
     </header>
 
-    <main>
+    <main class="overflow-hidden">
+
+      <!-- Slider main container -->
+      <div class="swiper d-md-none">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="../img/carrousel/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/carrousel/2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/carrousel/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/carrousel/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/carrousel/5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/carrousel/6.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/carrousel/7.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/carrousel/8.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../img/carrousel/9.jpg" alt=""></div>
+        </div>
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+          
+
+      <div class="main-banner wow fadeIn d-none d-md-block" id="top">
+        <video loop muted autoplay id="bg-video">
+            <source src="../img/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption d-flex justify-content-center align-items-center">
+            </div>
+        </div>
+      </div>
     
       <!-- 
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | BANNER
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="banner p-3"
-        >
-        <div class="banner__container container-fluid p-0 shadow rounded">
-          
+      
 
-          <div class="banner__cont-logo col-12 col-md-4
-            d-flex flex-column justify-content-center align-items-center"
-            data-aos="fade-opacity"
-            data-aos-delay="800"
-            data-aos-offset="10"
-            data-aos-duration="1000">
-            <img src="../img/logo.svg" alt="" class="d-block w-50"
-            >
+      <section class="catering p-5 overflow-hidden">
 
-            <h1 class="banner__titulo-principal mt-4 text-center"
-            >IBIZA DRINKS</h1>
+        <div class="container">
 
-            <h2 class="banner__titulo-secundario text-center"
-            ><i>EXPERIENCE</i> </h2>
+          <h1 class="my-3 text-center wow fadeInUp colorAzul" data-wow-duration="2s" data-wow-delay="500ms" >COCKTAIL CATERING  </h1>
+          <h2 class="my-3 text-center wow fadeInUp colorGris" data-wow-duration="2s" data-wow-delay="700ms" >BARRES PORTABLES</h2>
+
+          <div class="wow fadeIn mt-3 ornamento mx-auto" data-wow-duration="2s" data-wow-delay="700ms">
+            <img src="../img/orna5.png" alt="" width="100%" class="">
+          </div>
+
+          <div class="row justify-content-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="1000ms">
+
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="../img/boda.png" alt="">
+              <h3 class="text-center mt-2 p-2">Mariages</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="../img/corporativo.png" alt="">
+              <h3 class="text-center mt-2 p-2">Soirées privées</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="../img/fiesta.png" alt="">
+              <h3 class="text-center mt-2 p-2">Événements d'entreprise</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="../img/cena.png" alt="">
+              <h3 class="text-center mt-2 p-2">Dîners privés</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center mt-4 catering__cont-bodas col-12 col-md-5 col-lg-3 mx-2 rounded overflow-hidden">
+              <img class="catering__img" src="../img/barco.png" alt="">
+              <h3 class="text-center mt-2 p-2">Service de bateau</h3>
+            </div>
 
           </div>
         </div>
-
-        
       </section>
 
       <!-- 
@@ -183,108 +247,114 @@
       | VIDEO
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="video p-3">
+      <section class="video mt-5 container">
         <div class="video__container container-fluid py-3
-        d-flex flex-column justify-content-center align-items-center shadow rounded">
+        d-flex flex-column justify-content-center align-items-center">
 
-          <h2 class="video__titulo-principal text-center text-white my-5"
-            data-aos="fade-opacity"
-            data-aos-delay="200"
-            data-aos-duration="1500">
-            …Vivez l'expérience que vous recherchiez!
-          </h2>
+          
 
           <div class="video__row row px-3 mt-4">
 
-            <div class="video__cont-video col-12 col-md-8 p-0">
-              <video src="../img/video.mov" width="100%" height="100%" controls 
-              data-aos="fade-up"
-              data-aos-duration="1000"></video>
+            <div class="video__cont-video col-12 col-xl-8 p-0 d-none d-md-block wow fadeInLeft" data-wow-duration="2s" data-wow-delay="500ms">
+              <video muted width="100%" autoplay loop height="100%" id="bg_video2" >
+                <source src="../img/video2.mp4" type="video/mp4"  />
+              </video>
             </div>
 
-            <div class="video__cont-imagen col-12 col-md-4 p-3
-              d-flex justify-content-center align-items-center bg-white ">
-              <h2 class="video__parrafo text-center">Ibiza Drinks Experience <br>
+            <div class="video__cont-video col-12 col-xl-8 p-0 d-block d-md-none wow fadeInLeft" data-wow-duration="2s" data-wow-delay="500ms">
+              <video muted width="100%" controls height="100%" id="bg_video2" >
+                <source src="../img/video2.mp4" type="video/mp4"  />
+              </video>
+            </div>
+
+            
+            <div class="video__cont-imagen col-12 col-xl-4 p-3 
+              d-flex flex-column justify-content-center align-items-center wow fadeInRight" data-wow-duration="2s" data-wow-delay="500ms">
+              <h2>Ibiza Drinks Experience</h2>
+              <p class="video__parrafo text-center">
                 Nous vous invitons à vivre une expérience unique et inoubliable <br> 
                 Service de haute qualité et professionnalisme inégalé  <br>
                 Menu de cocktails exclusif <br>
                 Des bars mobiles élégants adaptables à tous types d'événements  <br>
                 Locations et bateaux magnifiques pour votre célébration <br>
-              </h2>
+              </p>
             </div>
-
-            
           </div>
+        
+          <div class="container">
+          <div class="video__row-caracteristicas row overflow-hidden">
 
-          <div class="video__row-caracteristicas row p-2 p-xl-4">
+            <h2 class="video__titulo-principal text-center colorAzul wow fadeIn" data-wow-duration="2s" data-wow-delay="500ms">
+              …Vivez l'expérience que vous recherchiez!
+            </h2>
 
+            <div>
+              <div class="wow fadeIn ornamento mx-auto mb-4 mt-3" data-wow-duration="2s" data-wow-delay="700ms">
+                <img src="../img/orna5.png" alt="" width="100%" class="">
+              </div>
+            </div>
+  
+            
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
-              d-flex flex-column justify-content-start align-items-center mt-2"
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="1000">
+              d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms"
+              >
 
               <div class="p-2 h-100 rounded">
                 <img src="../img/drink.svg" alt="" class="w-25 mt-4 d-block mx-auto">
               <h3 class="video__titulo text-center  mt-3">
                 Proposition <br> innovante
               </h3>
-              <p class="video__parrafo text-center ">
-                Nous sommes un concept révolutionnaire dans le monde des cocktails. Nous visons à mélanger art et élégance dans chaque cocktail et nous nous distinguons par notre restauration créative et spectaculaire</p>
+              <p class="video__parrafo p-1 text-center ">
+                Nous sommes un concept révolutionnaire dans le monde des cocktails. Nous visons à mélanger art et élégance dans chaque cocktail et nous nous distinguons par notre restauration créative et spectaculaire.
+              </p>
               </div>
 
               
             </div>
 
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
-              d-flex flex-column justify-content-start align-items-center mt-2"
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="1000">
+              d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="700ms">
 
               <div class="p-2 h-100 rounded">
                 <img src="../img/mozo.svg" alt="" class="w-25 mt-4 d-block mx-auto">
                 <h3 class="video__titulo text-center mt-3">
                   Excellents <br> professionnels
                 </h3>
-                <p class="video__parrafo text-center">
-                  Bien que nous soyons dans le secteur depuis des années, nous continuons à nous former pour continuer à grandir. Notre audace nous permet d'atteindre des endroits inexplorés, satisfaisant chaque année d'innombrables clients</p>
+                <p class="video__parrafo p-1 text-center">
+                  Bien que nous soyons dans le secteur depuis des années, nous continuons à nous former pour continuer à grandir. Notre audace nous permet d'atteindre des endroits inexplorés, satisfaisant chaque année d'innombrables clients.
+                </p>
               </div>
 
               
             </div>
 
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
-              d-flex flex-column justify-content-start align-items-center mt-2"
-              data-aos="fade-up"
-              data-aos-delay="600"
-              data-aos-duration="1000">
+              d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="900ms">
 
               <div class="p-2 h-100 rounded">
                 <img src="../img/drinks.svg" alt="" class="w-25 mt-4 d-block mx-auto">
               <h3 class="video__titulo text-center mt-3">
                 Qualité de la <br> matière première
               </h3>
-              <p class="video__parrafo text-center">
-                Nous avons des fournisseurs de marques reconnues et notre sélection de boissons est de la plus haute qualité. De même, nous utilisons des produits frais et biologiques pour la préparation, la présentation et l'accompagnement de cocktails </p>
+              <p class="video__parrafo p-1 text-center">
+                Nous avons des fournisseurs de marques reconnues et notre sélection de boissons est de la plus haute qualité. De même, nous utilisons des produits frais et biologiques pour la préparation, la présentation et l'accompagnement de cocktails.
+              </p>
               </div>
 
               
             </div>
 
             <div class="video__cont-caracteristica col-12 col-md-6 col-lg-3
-              d-flex flex-column justify-content-start align-items-center mt-2"
-              data-aos="fade-up"
-              data-aos-delay="700"
-              data-aos-duration="1000">
+              d-flex flex-column justify-content-start align-items-center mt-2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1100ms">
 
               <div class="p-2 h-100 rounded">
                 <img src="../img/mundo.svg" alt="" class="w-25 mt-4 d-block mx-auto">
               <h3 class="video__titulo text-center mt-3">
                 Compromis <br> écologique
               </h3>
-              <p class="video__parrafo text-center">
-                Nos barres mobiles sont fabriquées à la main à partir de matériaux recyclés, pour une durée de vie plus longue. Nous nous engageons à différencier les déchets à chaque événement, en contribuant au respect de l'environnement</p>
+              <p class="video__parrafo p-1 text-center">
+                Nos barres mobiles sont fabriquées à la main à partir de matériaux recyclés, pour une durée de vie plus longue. Nous nous engageons à différencier les déchets à chaque événement, en contribuant au respect de l'environnement.</p>
+              </p>
               </div>
 
               
@@ -292,6 +362,9 @@
 
           </div>
 
+        </div>
+
+        
         </div>
       </section>
 
@@ -301,82 +374,126 @@
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
 
-      <section class="testimonios p-3"
-        >
-        <div class="testimonios__container container-fluid p-0 shadow rounded">
-          
-            <!-- Swiper -->
-            <div class="swiper-container mySwiper">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <p class="text-dark w-75 text-center">
-                    <strong>
-                      La experiencia vivida con el equipo de "Ibiza Drinks Experience" en un evento privado en una villa espectacular, con un spot de las vistas de la ciudad vieja Dalt Vila, fué lo mejor que me pasó en mucho tiempo. La energía del Team de trabajo y la pasión que hay en cada cocktail son insuperables. Había una atmosfera 100% de disfrute y gozo de la vida!!! Muchas Gracias.
-                      <br><br>Nahuel Toscano - España 
-                    </strong>
-                  </p>
-                </div>
-
-                <div class="swiper-slide">
-                  <p class="text-dark w-75 text-center">
-                    <strong>
-                      Ottimo servizio, grande professionalità, tutto curato nei minimi dettagli, grande varieta’di cocktails  presentati benissimo e direi eccellenti!!
-                      Impossibile trovare un difetto nell organizzazione, tutti molto gentili e simpatici quindi direi un bel dieci e lode!
-                      <br><br> Elisa Bellafemmina - Italia
-                    </strong>
-                  </p>
-                </div>
-
-                <div class="swiper-slide">
-                  <p class="text-dark w-75 text-center">
-                    <strong>
-                      I had a great day, the service was quick and lovely and the cocktails were super tasty.
-                      I’m looking forward to getting another party with them! 
-                      <br><br> Mirko Heber - Alemania 
-                    </strong>
-                  </p>
-                </div>
-
-                <div class="swiper-slide">
-                  <p class="text-dark w-75 text-center">
-                    <strong>
-                      It was a beautiful experience! We had a pool party and Angelo and his staff accompanied us with professionalism and friendliness throughout all the day. The cocktails were amazing! I loved the flower decorations on the mojitos and the attention to every detail! We have to do it again! You left us with good vibes! Thank you guys xx
-                      <br><br> Sarah Freeman - Estados Unidos 
-                    </strong>
-                  </p>
-                </div>
-
-                <div class="swiper-slide">
-                  <p class="text-dark w-75 text-center">
-                    <strong>
-                      Lieu unique (j’adore le design et la super ambiance là-bas!) et très propre avec un service impeccable, rapide et très accueillant. Personnel sympa et très pro, Angelo souriante et gentil. Cocktail magnifique, colorés et élaborés, mais surtout très bonne. Je recommande sans hésitation. 
-                      Super moment, merci bcp les gars! 
-                      <br><br> Ilenia Fontaine - Francia 
-                    </strong>
-                  </p>
-                </div>
-
-                <div class="swiper-slide">
-                  <p class="text-dark w-75 text-center">
-                    <strong>
-                      Contratamos Ibiza Drink Experience para um Aniversário em Ibiza e foi realmente incrível, drinks excelentes e super criativos, equipe muito eficiente e simpática. Foi tudo perfeito, super recomendamos! 
-                      <br><br> Vitor de marco - Brazil
-                    </strong>
-                  </p>
-                </div>
-
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+      <!-- Testimonial Start -->
+      <div class="testimonial wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+              <h2 class="colorAzul">TÉMOIGNAGES</h2>
+                <p class="testimonial__quedicen">Que disent nos clients</p>
             </div>
+            <div class="owl-carousel testimonials-carousel">
+                
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Elisa Bellafemmina - Italia</h3>
+                        <p class="">
+                          Ottimo servizio, grande professionalità, tutto curato nei minimi dettagli, grande varieta’di cocktails  presentati benissimo e direi eccellenti!!
+                          Impossibile trovare un difetto nell organizzazione, tutti molto gentili e simpatici quindi direi un bel dieci e lode!
+                        </p>
+                    </div>
+                </div>
+               
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Sarah Freeman - Estados Unidos </h3>
+                        <p class="">
+                          It was a beautiful experience! We had a pool party and Angelo and his staff accompanied us with professionalism and friendliness throughout all the day. The cocktails were amazing! I loved the flower decorations on the mojitos and the attention to every detail! We have to do it again! You left us with good vibes! Thank you guys xx
 
-          
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Ilenia Fontaine - Francia </h3>
+                        <p class="">
+                          Lieu unique (j’adore le design et la super ambiance là-bas!) et très propre avec un service impeccable, rapide et très accueillant. Personnel sympa et très pro, Angelo souriante et gentil. Cocktail magnifique, colorés et élaborés, mais surtout très bonne. Je recommande sans hésitation. 
+                          Super moment, merci bcp les gars! 
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Daniel Marino Alsina - España </h3>
+                        <p class="">
+                          Organizamos un importante evento corporativo para una reconocida marca.
+                          Desde IDE supieron adaptarse perfectamente y ofrecieron un servicio fantástico.
+                          Se destaca mucho el magnífico trato con los managers, la gran profesionalidad del personal, la calidad y diseño de barras y uniformes y la atención a los detalles.
+                          Además los cócteles estaban riquísimos. Crearon uno especial para nosotros que triunfó descaradamente.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Sharon Costi - Inglaterra </h3>
+                        <p class="">
+                          What a wonderful service we had from Angelo and his team... the best cocktails on the island, the most attentive staff and the most profesional team in Ibiza. No one ever had an empty glass, the cocktails were beautiful and tasty and they left our house impecable. Can't recommend enough....
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Selina Van Hulzen - Holanda </h3>
+                        <p class="">
+                          Wow! Angelo and his team made our fairies and farmers 10y anniversary even more special, from the start he has been so professional, quick and easy to communicate with. The cocktails tasted amazing and the staff so friendly, 💯 % recommend working with this company!!
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Luca & Daniela - Inglaterra </h3>
+                        <p class="">
+                          Organizamos un importante evento corporativo para una reconocida marca.
+                          Desde IDE supieron adaptarse perfectamente y ofrecieron un servicio fantástico.
+                          Se destaca mucho el magnífico trato con los managers, la gran profesionalidad del personal, la calidad y diseño de barras y uniformes y la atención a los detalles.
+                          Además los cócteles estaban riquísimos. Crearon uno especial para nosotros que triunfó descaradamente.
+                                                  </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Mario Kneidinger - Alemania </h3>
+                        <p class="">
+                          Amazing service, drinks have a great quality and how they present them is an Expierence on another level.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Emma Salvajiot - Suecia </h3>
+                        <p class="">
+                          We contracted Ibiza Drinks for our wedding, we were amazed with the professionalism of this catering, they are experts in what they do, also they were very patient in advising us and adapt them selves to our needs.
+                          The staff is very prepared, the cocktails have been delicious until the end of the event.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    
+                    <div class="testimonial-text">
+                        <h3>Cristina Mari Tur - España </h3>
+                        <p class="">
+                          Un servicio impecable y un equipo excelente y muy profesional.
+                          Atentos y resolutivos tanto en la organización como en el evento. Sin duda una empresa fiable con la que repetiría la experiencia.
+
+                        </p>
+                    </div>
+                </div>
+               
+               
+            </div>
         </div>
-
-        
-      </section>
-
+    </div>
+    <!-- Testimonial End -->
     </main>
 
     <!-- 
@@ -384,7 +501,7 @@
       | FOOTER
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <footer class="footer p-3">
+      <footer class="footer wow fadeIn" data-wow-duration="2s" data-wow-delay="700ms">
         <div class="footer__container container-fluid py-3
         d-flex flex-column justify-content-center align-items-center shadow rounded">
 
@@ -393,8 +510,8 @@
 
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
-                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos text-white text-center mx-auto">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos colorBlack text-center mx-auto">+34 666 35 24 49</li>  
                 
               </ul>
 
@@ -402,24 +519,24 @@
 
             <div class="footer__cont-menu col-6 col-md-4">
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-around">
-                <li class=""><a href="debut.html" class="text-decoration-none text-white">DEBUT</a></li>
-                <li class=""><a href="qui-sommes.html" class="text-decoration-none text-white">QUI SOMMES</a></li>
-                <li class=""><a href="galerie.html" class="text-decoration-none text-white">GALERIE</a> </li>
-                <li class=""><a href="service.html" class="text-decoration-none text-white">SERVICES</a></li>
-                <li class=""><a href="contact.html" class="text-decoration-none text-white">CONTACT</a></li>
+                <li class=""><a href="debut.html" class="text-decoration-none colorBlack">DEBUT</a></li>
+                <li class=""><a href="qui-sommes.html" class="text-decoration-none colorBlack">QUI SOMMES</a></li>
+                <li class=""><a href="galerie.html" class="text-decoration-none colorBlack">GALERIE</a> </li>
+                <li class=""><a href="service.html" class="text-decoration-none colorBlack">SERVICES</a></li>
+                <li class=""><a href="contact.html" class="text-decoration-none colorBlack">CONTACT</a></li>
               </ul>
             </div>
 
             <div class="footer__cont-imagen col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <img src="../img/logo.svg" class="footer__logo" alt="">
+              <img src="../img/logo.png" class="footer__logo wow rotateIn" data-wow-duration="2s" data-wow-delay="1500ms"  alt="">
             </div>
 
             <div class="footer__cont-datos d-none d-md-block d-flex justify-content-center align-items-center col-12 col-md-4">
 
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
-                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos text-white text-center">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos colorBlack text-center">+34 666 35 24 49</li>  
                 
               </ul>
 
@@ -428,7 +545,7 @@
             
 
             <div class="container p-0 mt-3">
-              <h3 class=" footer__copy text-center py-2 m-0 text-white">Coryright@<script>document.write(new Date().getFullYear());</script> || Développé par <a class="text-white text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
+              <h3 class=" footer__copy text-center py-2 m-0 colorBlack">Coryright@<script>document.write(new Date().getFullYear());</script> || Développé par <a class="colorBlack text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
             </div>
 
           </div>
@@ -438,40 +555,53 @@
       </footer>
 
 
-    
-    
-    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
-    
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
 
-    
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+
+
+    <script src="../lib/touchSwipe/jquery.touchSwipe.min.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Owl -->
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Gererales JS -->
     <script src="../js/nav.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/main.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    
 
-    <!-- Initialize Swiper -->
+    <script src="../lib/wow/wow.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+       new WOW().init();
     </script>
 
     

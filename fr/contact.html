@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/lenguajes.css">
+    <link rel="stylesheet" href="../lib/animate/animate.css">
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
@@ -39,6 +40,10 @@
     <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <meta name="description" content="Restauration de cocktails de haute qualité à Ibiza, service privé de mixologues et serveurs professionnels.  Vivez l'expérience que vous recherchiez.">
     <meta name="keywords" content="traiteur ibiza, restauration de cocktails, service prive, organisateur de l'evenement, evenements chez vous, service de barmanet serveur">
@@ -56,6 +61,9 @@
       >
       
       <div class="header__contenedor-principal">
+
+        <!-- logo -->
+        <img src="../img/logo.png" width="50px" alt="">
           
         <!-- icono hamburguesa -->
         <div id="hamburger" class="hamburger">
@@ -147,7 +155,7 @@
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
       
-      <section class="quienes-somos contacto p-3"
+      <section class="quienes-somos contacto wow fadeIn"
         >
         <div class="quienes-somos__container contacto__cont-principal container-fluid p-3 d-flex justify-content-center align-items-center shadow rounded">
 
@@ -157,7 +165,7 @@
               <p class="mt-5">
                 <i class='bx bxs-map mx-3'></i>IBIZA - ESPAÑA
                 <br><br>
-                <i class='bx bxs-phone-call mx-3' ></i>34 666 35 24 49
+                <i class='bx bxs-phone-call mx-3' ></i>+34 666 35 24 49
                 <br><br>
                 <i class='bx bx-mail-send mx-3' ></i><a class="text-decoration-none" href="mailto:ibizadrinksexperience@gmail.com">ibizadrinksexperience@gmail.com</a>
                 
@@ -197,7 +205,7 @@
       | FOOTER
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <footer class="footer p-3">
+      <footer class="footer wow fadeIn" data-wow-duration="2s" data-wow-delay="700ms">
         <div class="footer__container container-fluid py-3
         d-flex flex-column justify-content-center align-items-center shadow rounded">
 
@@ -206,8 +214,8 @@
 
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
-                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos text-white text-center mx-auto">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos colorBlack text-center mx-auto">+34 666 35 24 49</li>  
                 
               </ul>
 
@@ -215,24 +223,24 @@
 
             <div class="footer__cont-menu col-6 col-md-4">
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-around">
-                <li class=""><a href="debut.html" class="text-decoration-none text-white">DEBUT</a></li>
-                <li class=""><a href="qui-sommes.html" class="text-decoration-none text-white">QUI SOMMES</a></li>
-                <li class=""><a href="galerie.html" class="text-decoration-none text-white">GALERIE</a> </li>
-                <li class=""><a href="service.html" class="text-decoration-none text-white">SERVICES</a></li>
-                <li class=""><a href="contact.html" class="text-decoration-none text-white">CONTACT</a></li>
+                <li class=""><a href="debut.html" class="text-decoration-none colorBlack">DEBUT</a></li>
+                <li class=""><a href="qui-sommes.html" class="text-decoration-none colorBlack">QUI SOMMES</a></li>
+                <li class=""><a href="galerie.html" class="text-decoration-none colorBlack">GALERIE</a> </li>
+                <li class=""><a href="service.html" class="text-decoration-none colorBlack">SERVICES</a></li>
+                <li class=""><a href="contact.html" class="text-decoration-none colorBlack">CONTACT</a></li>
               </ul>
             </div>
 
             <div class="footer__cont-imagen col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <img src="../img/logo.svg" class="footer__logo" alt="">
+              <img src="../img/logo.png" class="footer__logo" alt="">
             </div>
 
             <div class="footer__cont-datos d-none d-md-block d-flex justify-content-center align-items-center col-12 col-md-4">
 
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
-                <li class="footer__datos text-white text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos text-white text-center">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
+                <li class="footer__datos colorBlack text-center">+34 666 35 24 49</li>  
                 
               </ul>
 
@@ -241,7 +249,7 @@
             
 
             <div class="container p-0 mt-3">
-              <h3 class=" footer__copy text-center py-2 m-0 text-white">Coryright@<script>document.write(new Date().getFullYear());</script> || Développé par <a class="text-white text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
+              <h3 class=" footer__copy text-center py-2 m-0 colorBlack">Coryright@<script>document.write(new Date().getFullYear());</script> || Développé par <a class="colorBlack text-decoration-none" target="_blank" href="https://tuproyectoweb.com.ar">"TuProyectoWeb"</a></h3> 
             </div>
 
           </div>
@@ -273,6 +281,11 @@
     <!-- Gererales JS -->
     <script src="../js/nav.js"></script>
     <script src="../js/menu.js"></script>
+
+    <script src="../lib/wow/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
 
     
     
