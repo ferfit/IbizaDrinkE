@@ -1,6 +1,11 @@
 (function ($) {
     "use strict";
 
+    
+
+
+    console.log('holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+
     // Testimonials carousel
     $(".testimonials-carousel").owlCarousel({
       center: true,
@@ -86,6 +91,12 @@
     allowPageScroll:"vertical"
     });
    */
+
+
+    
+
+    
+
     
 })(jQuery);
   
