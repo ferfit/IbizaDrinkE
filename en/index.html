@@ -24,11 +24,6 @@
 
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
 
     <!-- owl carrousel -->
     <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -165,24 +160,19 @@
 
     <main class="overflow-hidden">
 
-      <!-- Slider main container -->
-      <div class="swiper d-md-none">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="../img/galeria/1.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/galeria/2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/galeria/3.jpg" alt=""></div>
-        </div>
-
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      <div class="swiper d-md-none overflow-hidden wow fadeIn">
+        <!-- Set up your HTML -->
+        <div class="owl-carousel">
+          <div><img src="../img/carrousel/1.jpg" alt=""></div>
+          <div><img src="../img/carrousel/2.jpg" alt=""></div>
+          <div><img src="../img/carrousel/3.jpg" alt=""></div>
+          <div><img src="../img/carrousel/4.jpg" alt=""></div>
+          <div><img src="../img/carrousel/5.jpg" alt=""></div>
+          <div><img src="../img/carrousel/6.jpg" alt=""></div>
+          <div><img src="../img/carrousel/7.jpg" alt=""></div>
+        </div>  
 
       </div>
-
-          
 
       <div class="main-banner wow fadeIn d-none d-md-block" id="top">
         <video loop muted autoplay id="bg-video">
@@ -533,7 +523,7 @@
               <ul class=" footer__list h-100 p-0 m-0 d-flex flex-column justify-content-center align-items-end">
 
                 <li class="footer__datos colorBlack text-center">ibizadrinksexperience@gmail.com</li>
-                <li class="footer__datos colorBlack text-center mx-auto">34 666 35 24 49</li>  
+                <li class="footer__datos colorBlack text-center mx-auto">+34 666 35 24 49</li>  
                 
               </ul>
 
@@ -580,35 +570,7 @@
         <i class="bx bxl-whatsapp whatsapp__icono"></i>
       </a> -->
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-    </script>
-
-
-    <script src="../lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-
+    
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 

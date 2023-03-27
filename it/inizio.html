@@ -23,11 +23,7 @@
     <link rel="stylesheet" href="../lib/animate/animate.css">
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+
     <!-- owl carrousel -->
     <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
@@ -160,30 +156,19 @@
 
     <main class="overflow-hidden">
 
-      <!-- Slider main container -->
-      <div class="swiper d-md-none">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="../img/carrousel/1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/carrousel/2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/carrousel/3.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/carrousel/4.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/carrousel/5.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/carrousel/6.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/carrousel/7.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/carrousel/8.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/carrousel/9.jpg" alt=""></div>
-        </div>
-
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      <div class="swiper d-md-none overflow-hidden wow fadeIn">
+        <!-- Set up your HTML -->
+        <div class="owl-carousel">
+          <div><img src="../img/carrousel/1.jpg" alt=""></div>
+          <div><img src="../img/carrousel/2.jpg" alt=""></div>
+          <div><img src="../img/carrousel/3.jpg" alt=""></div>
+          <div><img src="../img/carrousel/4.jpg" alt=""></div>
+          <div><img src="../img/carrousel/5.jpg" alt=""></div>
+          <div><img src="../img/carrousel/6.jpg" alt=""></div>
+          <div><img src="../img/carrousel/7.jpg" alt=""></div>
+        </div>  
 
       </div>
-
-          
 
       <div class="main-banner wow fadeIn d-none d-md-block" id="top">
         <video loop muted autoplay id="bg-video">
@@ -612,34 +597,6 @@
     <script src="../js/nav.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/main.js"></script>
-
-    
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-    </script>
     
     <!-- Wow -->
     <script src="../lib/wow/wow.min.js"></script>
