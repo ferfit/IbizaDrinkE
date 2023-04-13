@@ -1029,14 +1029,21 @@ input:focus, textarea:focus{
     background: #0b0d91;
 }
 
-.quienes-somos__cont-imagen img{
+/* .quienes-somos__cont-imagen img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;
- }
+ } */
 
+.quienes-somos__cont-imagen {
+    height: 100%;
+    background-image: url(../img/quienes_somos2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -1100,6 +1107,10 @@ input:focus, textarea:focus{
 
     .quienes-somos__cont-imagen {
         height: 100%;
+        background-image: url(../img/quienes_somos2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .quienes-somos__cont-imagen img{
